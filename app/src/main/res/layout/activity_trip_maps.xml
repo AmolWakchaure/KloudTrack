@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar" />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            tools:context=".MapsActivity"></fragment>
+
+        <RelativeLayout
+            android:id="@+id/one"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2.5dp"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:contentPadding="5dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0.2pt">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <RelativeLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent">
+
+                                        <TextView
+                                            android:id="@+id/sourceAddressTextview"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="3pt"
+                                            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                                            android:ellipsize="end"
+                                            android:maxLines="1"
+                                            android:text="Source Address"
+                                            android:textColor="@color/fentBlack" />
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorWhite"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="0.2pt"
+                                        android:layout_weight="1"
+                                        android:background="@color/screen_color">
+
+                                        <RelativeLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <RelativeLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_centerVertical="true">
+
+                                                <TextView
+                                                    android:id="@+id/kilometersTextView"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_marginTop="3pt"
+                                                    android:text="0KM"
+                                                    android:textColor="@color/fentBlack"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:id="@+id/distanceTextView"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_below="@+id/kilometersTextView"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_marginTop="3pt"
+
+                                                    android:text="DISTANCE"
+                                                    android:textColor="@color/fentBlack" />
+
+                                                <View
+                                                    android:layout_width="fill_parent"
+                                                    android:layout_height="3pt"
+                                                    android:layout_below="@+id/distanceTextView" />
+                                            </RelativeLayout>
+
+                                        </RelativeLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="0.2pt"
+                                        android:layout_weight="1"
+                                        android:background="@color/screen_color">
+
+                                        <RelativeLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <RelativeLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_centerVertical="true">
+
+                                                <TextView
+                                                    android:id="@+id/avgSpeedTextView"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_marginTop="3pt"
+                                                    android:text="0 KM/hr"
+                                                    android:textColor="@color/fentBlack"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:id="@+id/avgSpeedTeghfghxtView"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_below="@+id/avgSpeedTextView"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_marginTop="3pt"
+                                                    android:text="Avg Speed"
+                                                    android:textColor="@color/fentBlack" />
+
+                                                <View
+                                                    android:layout_width="fill_parent"
+                                                    android:layout_height="3pt"
+                                                    android:layout_below="@+id/avgSpeedTeghfghxtView" />
+                                            </RelativeLayout>
+
+                                        </RelativeLayout>
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="0.2pt"
+                                        android:layout_weight="1"
+                                        android:background="@color/screen_color"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/maxSpeedTextView"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="3pt"
+                                            android:text="KM/hr"
+                                            android:textColor="@color/fentBlack"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/erfdgdfg"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/maxSpeedTextView"
+
+                                            android:layout_marginTop="3pt"
+                                            android:text="Max Speed"
+                                            android:textColor="@color/fentBlack" />
+
+                                        <View
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="3pt"
+                                            android:layout_below="@+id/erfdgdfg" />
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0.2pt"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="0.2pt"
+                                        android:layout_weight="1"
+                                        android:background="@color/screen_color"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/onoffTimeTextView"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="3pt"
+                                            android:text="00:00:00"
+                                            android:textColor="@color/fentBlack"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/er"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/onoffTimeTextView"
+
+                                            android:layout_marginTop="3pt"
+                                            android:text="On Time"
+                                            android:textColor="@color/fentBlack" />
+
+                                        <View
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="3pt"
+                                            android:layout_below="@+id/er" />
+
+
+                                    </LinearLayout>
+
+
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+
+                                        android:background="@color/screen_color">
+
+                                        <RelativeLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <RelativeLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_centerVertical="true">
+
+                                                <TextView
+                                                    android:id="@+id/haltsTextView"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_marginTop="3pt"
+                                                    android:text="0"
+                                                    android:textColor="@color/fentBlack"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:id="@+id/engineIdleTextView"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_below="@+id/haltsTextView"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_marginTop="3pt"
+                                                    android:text="Halts"
+                                                    android:textColor="@color/fentBlack" />
+
+                                                <View
+                                                    android:layout_width="fill_parent"
+                                                    android:layout_height="3pt"
+                                                    android:layout_below="@+id/engineIdleTextView" />
+                                            </RelativeLayout>
+
+                                        </RelativeLayout>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <RelativeLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/destinationAddressTextview"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="3pt"
+                                            android:drawableLeft="@drawable/ic_location_on_destination_black_24dp"
+                                            android:ellipsize="end"
+                                            android:maxLines="1"
+                                            android:text="Destination address"
+                                            android:textColor="@color/fentBlack" />
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10pt"
+            android:layout_marginRight="10pt"
+            android:clickable="true"
+            android:onClick="playCarRoute"
+            android:src="@drawable/ic_directions_car_black_24dp"
+            app:backgroundTint="@color/primaryColor"
+            app:layout_anchorGravity="bottom"
+            app:rippleColor="@color/colorWhite" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context="snsystem.geofencing.trips.TripsTabActivity">
+
+<!--<item-->
+<!--android:id="@+id/select_date"-->
+<!--android:orderInCategory="100"-->
+<!--android:title="Date"-->
+<!--android:icon="@drawable/ic_date_range_notification_24dp"-->
+<!--app:showAsAction="always" />-->
+
+</menu>

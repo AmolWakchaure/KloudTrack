@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <string name="webUrl">http://1.22.124.222:81/</string>
+
+    <!--<string name="webUrl">http://192.168.1.47:81/</string> &lt;!&ndash;ujwala&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;<string name="webUrl">http://192.168.1.40/</string> &lt;!&ndash;vinayak&ndash;&gt;&ndash;&gt;-->
+
+    <string name="alarmData">obd/api/MobileAPI/GetAlarmLog</string>
+    <string name="tripsData">obd/api/MobileAPI/GetVehicleTrips</string>
+    <string name="tripsRouteLatLong">obd/api/MobileAPI/GetSingleVehicleTripData</string>
+
+    <string name="uploadDocument">obd/api/MobileAPI/SaveDocumets</string>
+    <string name="displayDocument">obd/api/MobileAPI/GetDocumentInformation</string>
+    <string name="documentImagePath">obd/doc/</string>
+
+    <string name="serviceSchedule">obd/api/MobileAPI/addServiceSchedule</string>
+    <string name="serviceHistory">obd/api/MobileAPI/getServiceScheduleHistory</string>
+    <string name="updateService">obd/api/MobileAPI/updateServiceSchedule</string>
+
+    <string name="startTrip">obd/api/MobileAPI/addTripRecord</string>
+    <string name="stopTrip">obd/api/MobileAPI/updateTripEndRecord</string>
+
+    <!--Feedback-->
+    <string name="sendFeedback">obd/api/MobileAPI/saveFeedback</string>
+
+    <string name="addAlerts">obd/api/MobileAPI/addAlerts</string>
+
+    <!--sos-->
+    <string name="submitSosCon">obd/api/MobileAPI/addSOSRecord</string>
+    <string name="sendSosSignalTowebapp">obd/api/MobileAPI/addSOSAlertRecord</string>
+
+    <!--advertise-->
+    <string name="displayAdvertise">obd/api/MobileAPI/getAdvertise</string>
+
+    <!--dashboard-->
+    <string name="displayDashboard">obd/api/MobileAPI/getDashboard</string>
+
+    <string name="getDeviceUpdateDetails">obd/api/MobileAPI/DeviceDetails</string>
+    <string name="getSOSContacts">obd/api/MobileAPI/getSOSContacts</string>
+
+    <string name="getCarLog">obd/api/MobileAPI/getCarLog</string>
+
+
+    <string name="getHealth">obd/api/MobileAPI/getVehicleHealthDetails</string>
+
+    <string name="activity_register_url">obd/api/MobileAPI/GetUserData</string>
+    <string name="activity_login_url">obd/api/MobileAPI/ValidLogin</string>
+    <string name="activity_change_password_url">obd/api/MobileAPI/ChangePassword</string>
+    <string name="activity_forgot_password_url">obd/api/MobileAPI/ForgetPassword</string>
+    <string name="check_device_id_url">obd/api/MobileAPI/CheckExistingDeviceID</string>
+    <string name="user_logout">obd/api/MobileAPI/Logout</string>
+    <string name="activity_user_email_id">obd/api/MobileAPI/UserProfile</string>
+    <string name="activity_insert_user_info">obd/api/MobileAPI/InsertUserProfile</string>
+    <string name="activity_manage_account">obd/api/MobileAPI/ManageAccount</string>
+    <string name="activity_insert_device">obd/api/MobileAPI/InsertDevice</string>
+    <string name="activity_update_device">obd/api/MobileAPI/UpdateDevice</string>
+    <string name="activity_device_lat_lang">obd/api/MobileAPI/GetDeviceLatLong</string>
+
+
+    <string name="alertApp">obd/api/MobileAPI/getDashboardAlert</string>
+
+
+    <string name="dailyPerformance">obd/api/MobileAPI/getPerformance</string>
+
+
+    <string name="getNormalTrips">obd/api/MobileAPI/getNormalTrips</string>
+
+
+    <!--Graphs webservices Ujwala-->
+
+    <string name="getSpeedGraphWeeklyMonthly">obd/api/MobileAPI/AverageSpeedForGraph</string>
+    <string name="getRpmGraphWeeklyMonthly">obd/api/MobileAPI/AverageRPMForGraph</string>
+    <string name="getBatteryVoltageGraphWeeklyMonthly">obd/api/MobileAPI/AverageBatteryVoltageForGraph</string>
+    <string name="getCoolantTempGraphWeeklyMonthly">obd/api/MobileAPI/AverageCoolantTempForGraph</string>
+    <string name="getOnTimeGraphWeeklyMonthly">obd/api/MobileAPI/OnTime</string>
+
+
+</resources>

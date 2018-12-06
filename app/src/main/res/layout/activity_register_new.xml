@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+
+
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarSize="10dp"
+        android:scrollbarThumbVertical="@drawable/custom_scroll_style">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="30dp"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical">
+                <!--  Username -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="0.10"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/inputLayoutName_reg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextLabel">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/input_firstname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_person_black_24dp"
+                            android:drawablePadding="4dp"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+
+                            android:hint="Full Name"
+                            android:imeOptions="actionNext|flagNoExtractUi"
+                            android:inputType="textCapSentences|textNoSuggestions"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+
+                            android:theme="@style/autocompleteHome" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+                <!--  Email -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="0.10"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/inputLayoutEmail_reg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextLabel">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/reg_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_email_black_24dp"
+                            android:drawablePadding="4dp"
+                            android:digits="abcdefghijklmnopqrstuvwxyz@."
+                            android:hint="Email"
+                            android:imeOptions="actionNext|flagNoExtractUi"
+                            android:inputType="textEmailAddress|textNoSuggestions"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+
+                            android:theme="@style/autocompleteHome" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="0.10"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/inputLayoutdevice_Id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextLabel">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/device_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_phonelink_setup_black_24dp"
+                            android:drawablePadding="4dp"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                            android:ems="10"
+                            android:hint="Device ID"
+                            android:imeOptions="actionNext|flagNoExtractUi"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:textColor="@color/black"
+
+                            android:theme="@style/autocompleteHome" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="0.10"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+                    <!--  Password Label -->
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/inputLayoutPassword_reg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextLabel">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/reg_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_lock_black_24dp"
+                            android:drawablePadding="4dp"
+
+                            android:ems="10"
+                            android:hint="Password"
+                            android:imeOptions="actionNext|flagNoExtractUi"
+                            android:inputType="textPassword"
+                            android:textColor="@color/black"
+                            android:theme="@style/autocompleteHome"
+
+                            />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="0.10"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+                    <!--  Password Label -->
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/inputLayoutConfirm_pass_reg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextLabel">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/reg_confirm_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_lock_black_24dp"
+                            android:drawablePadding="4dp"
+                            android:ems="10"
+                            android:hint="Confirm Password"
+                            android:imeOptions="actionNext|flagNoExtractUi"
+                            android:inputType="textPassword"
+                            android:textColor="@color/black"
+                            android:theme="@style/autocompleteHome"
+
+                            />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.10"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/inputLayoutMobile_reg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextLabel">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/input_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_callll_black_24dp"
+                            android:drawablePadding="4dp"
+                            android:hint="Mobile Number"
+                            android:digits="+0123456789"
+                            android:imeOptions="actionDone|flagNoExtractUi"
+                            android:inputType="phone"
+                            android:maxLength="13"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:theme="@style/autocompleteHome" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.10"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/txt_terms_condition"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.1"
+                        android:onClick="txt_terms_condition"
+                        android:text="@string/txt"
+                        android:textColor="#600002"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    android:padding="15dp">
+
+                    <Button
+                        android:id="@+id/btn_register"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/round_buttonn"
+                        android:text="REGISTER"
+
+                        android:textColor="#fff"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/register_cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/round_button_red"
+                        android:text="CANCEL"
+
+
+                        android:textColor="#fff" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_below="@+id/linearLayout"
+                android:layout_height="20pt">
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>
+

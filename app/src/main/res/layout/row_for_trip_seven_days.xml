@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/screen_color">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1pt"
+        android:layout_below="@+id/relativeLayout2"
+        android:background="@color/colorWhite" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2.5dp"
+            card_view:cardCornerRadius="4dp"
+            card_view:contentPadding="5dp">
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0.2pt">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true">
+
+
+                                        <TextView
+                                            android:id="@+id/sourceTimeTextView"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/va"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_marginTop="3pt"
+                                            android:text="9:24 AM"
+                                            android:textColor="@color/fentBlack"
+                                            android:textSize="5pt"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/sourceDateTextView"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/sourceTimeTextView"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_marginTop="3pt"
+                                            android:text="Thu, Nov 03"
+                                            android:textColor="@color/fentBlack"
+                                            android:textSize="5pt" />
+                                    </RelativeLayout>
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1">
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true">
+
+                                        <TextView
+                                            android:id="@+id/desinationTimeTextView"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_marginTop="3pt"
+                                            android:text="9:24 AM"
+                                            android:textColor="@color/fentBlack"
+                                            android:textSize="5pt"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/desinationDateTextView"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/desinationTimeTextView"
+                                            android:layout_centerHorizontal="true"
+
+                                            android:layout_marginTop="3pt"
+                                            android:text="Thu, Nov 03"
+                                            android:textColor="@color/fentBlack"
+                                            android:textSize="5pt" />
+                                    </RelativeLayout>
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="7">
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent">
+
+                                <TextView
+                                    android:layout_width="0.8pt"
+                                    android:layout_height="fill_parent"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="4pt"
+                                    android:background="@color/red" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent">
+
+                                <TextView
+                                    android:id="@+id/sourceAddresstextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3pt"
+                                    android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:text="Sahakar Nagar, Pune 411009,India"
+                                    android:textColor="@color/fentBlack" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/colorWhite"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="0.2pt"
+                                android:layout_weight="1"
+                                android:background="@color/screen_color">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true">
+
+                                        <TextView
+                                            android:id="@+id/kmsTimeTextView"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_marginTop="3pt"
+                                            android:text="2.7KM"
+                                            android:textColor="@color/fentBlack"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/distanceTextView"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/kmsTimeTextView"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_marginTop="3pt"
+
+                                            android:text="DISTANCE"
+                                            android:textColor="@color/fentBlack" />
+
+                                        <View
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="3pt"
+                                            android:layout_below="@+id/distanceTextView" />
+                                    </RelativeLayout>
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="0.2pt"
+                                android:layout_weight="1"
+                                android:background="@color/screen_color">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true">
+
+                                        <TextView
+                                            android:id="@+id/kmhrTimeTextView"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_marginTop="3pt"
+                                            android:text="14 KM/hr"
+                                            android:textColor="@color/fentBlack"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/avgSpeedTextView"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/kmhrTimeTextView"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_marginTop="3pt"
+                                            android:text="Avg Speed"
+                                            android:textColor="@color/fentBlack" />
+
+                                        <View
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="3pt"
+                                            android:layout_below="@+id/avgSpeedTextView" />
+                                    </RelativeLayout>
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="fill_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_weight="1"-->
+
+                                <!--android:background="@color/screen_color">-->
+
+                                <!--<RelativeLayout-->
+                                    <!--android:layout_width="fill_parent"-->
+                                    <!--android:layout_height="wrap_content">-->
+
+                                    <!--<RelativeLayout-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:layout_centerHorizontal="true"-->
+                                        <!--android:layout_centerVertical="true">-->
+
+                                        <!--<TextView-->
+                                            <!--android:id="@+id/minTimeTextView"-->
+                                            <!--android:layout_width="wrap_content"-->
+                                            <!--android:layout_height="wrap_content"-->
+                                            <!--android:layout_centerHorizontal="true"-->
+                                            <!--android:layout_marginTop="3pt"-->
+                                            <!--android:text="4"-->
+                                            <!--android:textColor="@color/fentBlack"-->
+                                            <!--android:textStyle="bold" />-->
+
+                                        <!--<TextView-->
+                                            <!--android:id="@+id/engineIdleTextView"-->
+                                            <!--android:layout_width="wrap_content"-->
+                                            <!--android:layout_height="wrap_content"-->
+                                            <!--android:layout_below="@+id/minTimeTextView"-->
+                                            <!--android:layout_centerHorizontal="true"-->
+                                            <!--android:layout_marginTop="3pt"-->
+                                            <!--android:text="Halts"-->
+                                            <!--android:textColor="@color/fentBlack" />-->
+
+                                        <!--<View-->
+                                            <!--android:layout_width="fill_parent"-->
+                                            <!--android:layout_height="3pt"-->
+                                            <!--android:layout_below="@+id/engineIdleTextView" />-->
+                                    <!--</RelativeLayout>-->
+
+                                <!--</RelativeLayout>-->
+
+                            <!--</LinearLayout>-->
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0.2pt"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="0.2pt"
+                                android:layout_weight="1"
+                                android:background="@color/screen_color"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/onTimeTextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3pt"
+                                    android:text="00:00:00"
+                                    android:textColor="@color/fentBlack"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/er"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/kmsTimeTextView"
+
+                                    android:layout_marginTop="3pt"
+                                    android:text="On Time"
+                                    android:textColor="@color/fentBlack" />
+
+                                <View
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="3pt"
+                                    android:layout_below="@+id/er" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/screen_color"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/minTimeTextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3pt"
+
+                                    android:text="0"
+                                    android:textColor="@color/fentBlack"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/ta"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/kmsTimeTextView"
+
+                                    android:layout_marginTop="3pt"
+                                    android:text="Halts"
+                                    android:textColor="@color/fentBlack" />
+
+                                <View
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="3pt"
+                                    android:layout_below="@+id/ta" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/destinationAddresstextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3pt"
+                                    android:drawableLeft="@drawable/ic_location_on_destination_black_24dp"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:text="Suvarnanagri Path, Padmavati, Pune 411037,India"
+                                    android:textColor="@color/fentBlack" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

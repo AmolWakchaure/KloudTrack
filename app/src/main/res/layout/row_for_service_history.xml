@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/a"
+        android:layout_width="fill_parent"
+        android:layout_height="15pt"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:background="@color/colorWhite"
+            android:layout_margin="0.1dp"
+            android:gravity="center_vertical">
+
+
+            <TextView
+                android:id="@+id/historyDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3pt"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="2017,Feb 08"
+                android:textSize="5pt" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:background="@color/colorWhite"
+                android:layout_margin="0.1dp"
+                android:gravity="center_vertical">
+
+
+                <TextView
+                    android:id="@+id/historyCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2pt"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="5000"
+                    android:textSize="5pt" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:layout_margin="0.1dp"
+                android:gravity="center_vertical">
+
+
+                <TextView
+                    android:id="@+id/historyRemark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2pt"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="oil change, machine cleaning."
+                    android:textSize="5pt" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

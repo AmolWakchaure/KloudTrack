@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/screen_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5pt"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:contentPadding="5dp">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5pt"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2pt"
+                            android:textColor="@color/primaryColor"
+                            android:text="Select Vehicle Name*" />
+
+                        <Button
+                            android:id="@+id/vehicleNameButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3pt"
+                            android:background="@drawable/ic_dropdown"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="5pt"
+                            android:text="Vehicle Name"
+                            android:textAllCaps="false" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2pt"
+                            android:textColor="@color/primaryColor"
+                            android:layout_marginTop="3pt"
+                            android:text="Date*" />
+
+                        <Button
+                            android:id="@+id/dateButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3pt"
+                            android:background="@drawable/round_buttonn"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="5pt"
+                            android:text="Date"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorWhite" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5pt"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:contentPadding="5dp">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5pt"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2pt"
+                            android:textColor="@color/primaryColor"
+                            android:layout_marginTop="3pt"
+                            android:text="Odometer Reading*" />
+
+                        <EditText
+                            android:id="@+id/odoReqadingEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3pt"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"
+                            android:digits="0123456789."
+                            android:maxLength="10"
+                            android:inputType="phone"
+                            android:hint="Enter Odometer reading" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2pt"
+                            android:layout_marginTop="3pt"
+                            android:textColor="@color/primaryColor"
+                            android:text="Quantity*" />
+
+                        <EditText
+                            android:id="@+id/quantityLtrEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3pt"
+                            android:imeOptions="actionNext"
+                            android:inputType="phone"
+                            android:maxLength="5"
+                            android:digits="0123456789."
+                            android:singleLine="true"
+                            android:hint="Quantity in ltr" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/primaryColor"
+                            android:layout_marginLeft="2pt"
+                            android:layout_marginTop="3pt"
+                            android:text="Cost/Quantity*" />
+
+                        <EditText
+                            android:id="@+id/costEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3pt"
+                            android:digits="0123456789."
+
+                            android:inputType="phone"
+                            android:maxLength="5"
+                            android:imeOptions="actionDone"
+                            android:singleLine="true"
+                            android:hint="Cost per Liters ₹ / Ltr" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/primaryColor"
+                            android:layout_marginLeft="2pt"
+                            android:visibility="gone"
+                            android:layout_marginTop="3pt"
+                            android:text="Notes" />
+
+                        <EditText
+                            android:id="@+id/notesEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3pt"
+                            android:visibility="gone"
+                            android:imeOptions="actionDone"
+                            android:inputType="textCapSentences|textNoSuggestions"
+                            android:maxLength="100"
+                            android:singleLine="true"
+                            android:hint="Additional info (Optional)" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5pt"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:contentPadding="5dp">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5pt"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <Button
+                            android:id="@+id/saveButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="1pt"
+                            android:layout_weight="1"
+                            android:background="@color/primaryColor"
+                            android:text="Save"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorWhite" />
+
+                        <Button
+                            android:id="@+id/clearButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="1pt"
+                            android:layout_weight="1"
+                            android:background="@color/primaryColor"
+                            android:text="Clear"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorWhite" />
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="20pt" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

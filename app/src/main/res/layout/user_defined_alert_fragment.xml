@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/aa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/a"
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:layout_height="30pt">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.8"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:id="@+id/textViewFuelLevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4pt"
+                        android:layout_weight="1"
+                        android:text="Fuel Level"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/fentBlack" />
+
+                    <ImageView
+                        android:id="@+id/fuelInfoDialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3pt"
+                        android:layout_weight="2"
+                        android:src="@drawable/ic_help_outline_black_24dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.5">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <android.support.v7.widget.SwitchCompat
+                                android:id="@+id/compatSwitchFuelLevel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:id="@+id/setFuelLevel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:clickable="true">
+
+                            <TextView
+                                android:id="@+id/spinnerFuelLevel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="4pt"
+                                android:text="Set Fuel Level">
+
+                            </TextView>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2pt"
+            android:layout_below="@+id/a"
+            android:background="@color/screen_color" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ab"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aa">
+
+        <RelativeLayout
+            android:id="@+id/b"
+            android:layout_width="fill_parent"
+            android:layout_height="30pt">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.8"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:id="@+id/textViewSpeed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4pt"
+                        android:layout_weight="1"
+                        android:text="Speed"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/fentBlack" />
+
+                    <ImageView
+                        android:id="@+id/speedInfoDialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3pt"
+                        android:layout_weight="2"
+                        android:src="@drawable/ic_help_outline_black_24dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.5">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <android.support.v7.widget.SwitchCompat
+                                android:id="@+id/compatSwitchSpeed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:id="@+id/setSpeedLevel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:clickable="true">
+
+                            <TextView
+                                android:id="@+id/spinnerSpeed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="4pt"
+                                android:text="Set Speed">
+
+                            </TextView>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2pt"
+            android:layout_below="@+id/b"
+            android:background="@color/screen_color" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ac"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ab">
+
+        <RelativeLayout
+            android:id="@+id/c"
+            android:layout_width="fill_parent"
+            android:layout_height="30pt">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.8"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:id="@+id/textViewRpm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4pt"
+                        android:layout_weight="1"
+                        android:text="RPM"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/fentBlack" />
+
+                    <ImageView
+                        android:id="@+id/rpmInfoDialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3pt"
+                        android:layout_weight="2"
+                        android:src="@drawable/ic_help_outline_black_24dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.5">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <android.support.v7.widget.SwitchCompat
+                                android:id="@+id/compatSwitchRpm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:id="@+id/setRpmLevel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:clickable="true">
+
+                            <TextView
+                                android:id="@+id/spinnerRpm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="4pt"
+
+                                android:text="Set RPM">
+
+                            </TextView>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2pt"
+            android:layout_below="@+id/c"
+            android:background="@color/screen_color" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ac">
+
+        <RelativeLayout
+            android:id="@+id/d"
+            android:layout_width="fill_parent"
+            android:layout_height="30pt">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.8"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:id="@+id/textViewMaintenance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4pt"
+                        android:layout_weight="1"
+                        android:text="Maintenance"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/fentBlack" />
+
+                    <ImageView
+                        android:id="@+id/maintenanceInfoDialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1pt"
+                        android:layout_weight="2"
+                        android:src="@drawable/ic_help_outline_black_24dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.5">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <android.support.v7.widget.SwitchCompat
+                                android:id="@+id/compatSwitchMaintenance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:id="@+id/setMaintenance"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:clickable="true">
+
+                            <TextView
+                                android:id="@+id/spinnerMaintenance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="4pt"
+
+                                android:text="Set Maintenance">
+
+                            </TextView>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2pt"
+            android:layout_below="@+id/d"
+            android:background="@color/screen_color" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ae"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/e"
+            android:layout_width="fill_parent"
+            android:layout_height="30pt">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.8"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewServiceDue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="2pt"
+                        android:text="Service Due"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/fentBlack" />
+
+                    <ImageView
+                        android:id="@+id/serviceDueInfoDialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1pt"
+
+                        android:src="@drawable/ic_help_outline_black_24dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.5">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <android.support.v7.widget.SwitchCompat
+                                android:id="@+id/compatSwitchServiceDue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:id="@+id/setServiceDue"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:clickable="true">
+
+                            <TextView
+                                android:id="@+id/spinnerServiceDue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="4pt"
+
+                                android:text="Set Service Due">
+
+                            </TextView>
+
+                            <!--<Spinner-->
+                            <!--android:id="@+id/spinnerServiceDue"-->
+                            <!--android:layout_width="fill_parent"-->
+                            <!--android:layout_height="fill_parent"-->
+                            <!--android:layout_margin="3pt"-->
+
+                            <!--android:entries="@array/alert_in_days">-->
+
+                            <!--</Spinner>-->
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2pt"
+            android:layout_below="@+id/e"
+            android:background="@color/screen_color" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/af"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ae">
+
+        <RelativeLayout
+            android:id="@+id/f"
+            android:layout_width="fill_parent"
+            android:layout_height="30pt">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.8"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:id="@+id/textViewSubscription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4pt"
+                        android:layout_weight="1"
+                        android:text="Subscription"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/fentBlack" />
+
+                    <ImageView
+                        android:id="@+id/subscriptionInfoDialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1pt"
+                        android:layout_weight="2"
+                        android:src="@drawable/ic_help_outline_black_24dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.5">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <android.support.v7.widget.SwitchCompat
+                                android:id="@+id/compatSwitchSubscription"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:id="@+id/setSubscription"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:clickable="true">
+
+
+                            <TextView
+                                android:id="@+id/spinnerSubscription"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="4pt"
+                                android:text="Set Subscription">
+
+                            </TextView>
+
+
+                            <!--<Spinner-->
+                            <!--android:id="@+id/spinnerSubscription"-->
+                            <!--android:layout_width="fill_parent"-->
+                            <!--android:layout_height="fill_parent"-->
+                            <!--android:layout_margin="3pt"-->
+
+                            <!--android:entries="@array/alert_in_days">-->
+
+                            <!--</Spinner>-->
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2pt"
+            android:layout_below="@+id/f"
+            android:background="@color/screen_color" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

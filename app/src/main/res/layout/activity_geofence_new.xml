@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".geofencesnehal.GeofenceActivitySnehal">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar" />
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_add_places"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <Button
+            android:id="@+id/btn_Add_places"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10pt"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="5pt"
+            android:background="@drawable/round_buttonn"
+            android:onClick="add_places"
+            android:text="ADD PLACES"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativelayout_add_places">
+
+        <ListView
+            android:id="@+id/recyclerview_geofence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false">
+
+        </ListView>
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/map_add_device"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:background="#80000000"-->
+    <!--android:visibility="gone">-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_margin="15pt"-->
+    <!--android:background="@drawable/card_view">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@+id/container_toolbar"-->
+    <!--android:layout_margin="5pt">-->
+
+    <!--<fragment xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:id="@+id/map_geo_fence"-->
+    <!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context="com.sample.sishin.maplocation.MapsActivity" />-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/locationMarker"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginBottom="30dp"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/locationMarkertext"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@drawable/button_error_effect"-->
+    <!--android:gravity="center"-->
+    <!--android:minWidth="250dp"-->
+    <!--android:paddingLeft="2dp"-->
+    <!--android:paddingRight="2dp"-->
+    <!--android:text=" Set your Location "-->
+    <!--android:textColor="@android:color/white" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageMarker"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="5pt"-->
+    <!--android:src="@drawable/ic_source_location_48dp" />-->
+    <!--</LinearLayout>-->
+    <!--</FrameLayout>-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--</RelativeLayout>-->
+
+
+</RelativeLayout>

@@ -1,0 +1,426 @@
+<resources>
+    <string name="app_name">OBD</string>
+    <string name="title_activity_maps">OBD</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_custom_views">CustomViewsActivity</string>
+
+    <string name="notification">Notification</string>
+    <string name="emergency_contacts">Emergency Contacts</string>
+    <string name="health">Health</string>
+
+    <string name="alerts">Alerts</string>
+    <string name="documents">Documents</string>
+
+
+    <string name="title_activity_geo_fense">GeoFenseActivity</string>
+
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_trips">Trips</string>
+    <string name="connection">Oops ! network connection off</string>
+
+
+    <string name="title_activity_car_log_events">Events</string>
+    <string name="title_activity_emergency_contacts">Emergency Contacts</string>
+    <string name="emergency_con">In case of crash, below mobile numbers shall be</string>
+    <string name="emergency_conn">contacted in order of preference.</string>
+    <string name="title_activity_manage_alerts">Manage Alerts</string>
+    <string name="title_activity_sos">SOS</string>
+    <string name="alert_info">Press for 1 seconds</string>
+    <string name="title_activity_health">HealthActivity</string>
+
+    <string name="title_activity_health_description">HealthDescriptionActivity</string>
+    <string name="title_activity_document_upload">Documents &amp; Reminders</string>
+    <string name="contact_success">Contact successfully added.</string>
+    <string name="contacts_update">Contact sussessfully updated</string>
+    <string name="contact_attach">no contact attached click to attach</string>
+    <string name="update_contact">Please update your emergency contacts for SOS to work!</string>
+    <string name="title_activity_runtime_permissions">RuntimePermissionsActivity</string>
+
+    <string name="runtime_permissions_txt">you need to allow all permissions</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="title_activity_volly">VollyActivity</string>
+    <string name="title_activity_view_pager_dialog">ViewPagerDialogActivity</string>
+    <string name="title_activity_dialog">DialogActivity</string>
+    <string name="alert_off">false</string>
+    <string name="alert_on">true</string>
+    <string name="notification_msg">Loading Notification...</string>
+    <string name="title_activity_create_trips">CreateTripsActivity</string>
+    <string name="title_activity_create_trips_one">Map</string>
+    <string name="title_activity_create_trrip">CreateTrripActivity</string>
+    <string name="title_activity_car_trips">CarTripsActivity</string>
+    <string name="title_activity_trips_tab">TripsTabActivity</string>
+    <string name="alertsfgh">Alerts</string>
+    <string name="feedback">Feedback</string>
+    <string name="locateCar">Locate My Car</string>
+
+    <string name="accept_checkbox"> I have read and accept the above Terms and condition</string>
+
+
+    <string-array name="vheicle_names">
+        <item>Select Vehicle*</item>
+        <item>Amol Wakchaure</item>
+        <item>Gokul Wakchaure</item>
+    </string-array>
+    <string-array name="service_status">
+        <item>New</item>
+        <item>Completed</item>
+        <item>Not Completed</item>
+        <item>In Progress</item>
+    </string-array>
+    <string name="title_activity_demo">DemoActivity</string>
+    <string name="title_activity_geo_fence">GeoFenceActivity</string>
+    <string name="title_activity_create_geofence">CreateGEofenceActivity</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="logo_desc">App logo</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_submit_sos_contact">SubmitSosContactActivity</string>
+    <string name="title_activity_main_navigation">MainNavigationActivity</string>
+    <string name="txt"><u><b><i> Acceptanace of Terms &amp; Condition is mandatory to proceed further.</i></b></u></string>
+    <string name="title_activity_activity_terms_conditions">Terms Conditions</string>
+
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_password">Enter password</string>
+    <string name="err_msg_mobileNo">Enter 10 digit mobile number</string>
+    <string name="err_msg_name"> Enter user name</string>
+    <string name="err_msg_confirm_pass">Passwords are different</string>
+    <string name="err_msg_device_id"> Enter Device ID</string>
+    <string name="title_activity_activity_manage_account">Manage Device</string>
+    <string name="title_activity_app_tutorial">AppTutorialActivity</string>
+    <string name="dashboard">OBD</string>
+    <string name="sos">SOS Contacts</string>
+    <string name="trips">Trips</string>
+    <string name="profile">Profile</string>
+    <string name="document">Document Upload</string>
+    <string name="chPassword">Change Password</string>
+    <string name="manageAlerts">Manage Alerts</string>
+
+    <string name="btn_skip">SKIP</string>
+    <string name="btn_done">DONE</string>
+
+    <string name="tour_head_01">Help your users</string>
+    <string name="tour_content_01">Show information about your app in a good looking and straightforward way to improve the understanding of your users.</string>
+    <string name="tour_head_02">Make awesome transitions</string>
+    <string name="tour_content_02">Update the images and its location settings to perform incredible transitions that will wonder anyone who sees it.</string>
+    <string name="tour_head_03">Keep it simple</string>
+    <string name="tour_content_03">Verify the your tour a number of times to make sure that you kept it as simple as possible. The information shown on it should be succinct.</string>
+    <string name="title_activity_trip_maps">Trip</string>
+    <string name="addDevice">Add New Device</string>
+    <string name="upDevice">Update Device</string>
+    <string name="crrLog">Car Log</string>
+
+
+    <string name="empty">E</string>
+    <string name="half">1/2</string>
+    <string name="full">F</string>
+
+    <string-array name="blank_adapter">
+        <item>Select</item>
+    </string-array>
+
+    <string-array name="fuel_level">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+
+    </string-array>
+
+    <string-array name="vehicle_speed">
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+        <item>110</item>
+        <item>120</item>
+
+
+    </string-array>
+
+    <string-array name="rpm_speed">
+        <item>850</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>5000</item>
+        <item>6000</item>
+        <item>7000</item>
+        <item>8000</item>
+        <item>9000</item>
+        <item>10000</item>
+    </string-array>
+
+    <string-array name="alert_in_days">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+
+    </string-array>
+
+    <string-array name="feedback_problem">
+        <item>problem 1</item>
+        <item>problem 2</item>
+        <item>problem 3</item>
+        <item>problem 4</item>
+        <item>problem 5</item>
+        <item>problem 6</item>
+        <item>problem 7</item>
+
+
+    </string-array>
+
+    <string-array name="vehice_name">
+        <item>Amol</item>
+        <item>Gokul</item>
+
+
+    </string-array>
+    <string-array name="maintenace_type">
+        <item>Car wash</item>
+        <item>check/replace the engine oil and replace oil filters</item>
+        <item>check/replace fuel filters</item>
+        <item>inspect tires for pressure and wear</item>
+        <item>Tire balancing</item>
+        <item>Tire rotation</item>
+        <item>Wheel alignment</item>
+        <item>check, clean or replace battery terminals and top up battery fluid</item>
+        <item>inspect or replace brake pads</item>
+        <item>check or flush brake fluid</item>
+        <item>check or flush transmission fluid</item>
+        <item>check or flush power steering fluid</item>
+        <item>check and flush engine coolant</item>
+        <item>inspect or replace spark plugs</item>
+        <item>inspect or replace air filter</item>
+        <item>check all lights</item>
+
+
+    </string-array>
+
+    <string-array name="gear_type">
+        <item>Manual</item>
+        <item>Auto</item>
+    </string-array>
+
+    <string name="termscondition"> <b>TERMS OF USE</b>\n\n(For the Mobile App and the Website)\n\nPLEASE READ THESE TERMS OF USE CAREFULLY.BY USING THIS WEBSITE OR APP YOU INDICATE YOUR UNDERSTANDING AND ACCEPTANCE OF THESE TERMS. IF YOU DO NOT AGREE TO
+    THESE TERMS YOU MAY NOT USE THIS APP OR WEBSITE.\n\n<b>1. <u>DEFINITIONS:</u></b>\n\n“Hardware” means a device that may be
+    connected to any machine, instrument or vehicle in connection with the Services.\n\n“User”, “You”, “Your” means any person
+    who browses, views, accesses or uses the App or Website, including employees, personnel or your service providers wherever
+    applicable to avail the Services;\n\n“Use” or “Using” means to browse, access, view, copy, avail the Services, use or benefit
+    from the use of the Hardware or otherwise gain benefit from using the Hardware, App or Website; \n\n“We”, “Company”, “us” and
+    “our” or “Kloudworks” means Kloudworks Consulting Services Limited, having its registered office at Plot no 1, Yena, Adwait Nagar,
+    Paud Phata, Pune 411038, Maharashtra; \n\n“Website” or “App” means mobile or software application duly owned, operated and
+    maintained by Company in the territory India / Worldwide and which are linked to these Terms of Use.\n\n<b>2. <u>INTRODUCTION:
+    </u></b>\n\nWelcome to our App or Website. This App or Website is owned and operated by Kloudworks, if you continue to
+    browse and use this App or Website, You are agreeing to comply with and be bound by these terms and conditions,
+    which together with our privacy policy govern relationship of Kloudworks with You. If You disagree with any
+    part of these Terms of Use, You may not use this App or Website in entirety.\n\nWe reserve the right, at our sole discretion,
+    to change or modify the Terms of Use at any time. The latest version of our the Terms of Use will be made available on the
+    webpage <u> www.kloudworkscs.com </u> and you undertake to revisit the webpage on a regular basis, as the latest version of the
+    Terms of Use will be binding. You acknowledge and agree that the continued use of the Services after the Terms of Use have
+    been modified shall constitute that you have accepted any and all modifications.\n\n<b>3. <u> SCOPE OF SERVICES:</u></b>\n\nThe
+    “Services” shall include a) all mobile application, b) the Website and c) services provided by Kloudworks through the
+    mobile application or the Website using Company’s software, data, reports, text, images, and content made available through any of
+    the foregoing. By virtue of our Services, You would be able to access, manage, use, collect,store, share data received from the
+    Hardware for your internal business use.\n\nImportant notice: In order for the Services to function properly, the Hardware must
+    be correctly installed in the vehicle. The Hardware must also have adequate network and data service in the location where it
+    is used.\n\nYou understand and agree that interruptions of the Services may occur as normal events. You further understand and
+    agree that we have no control over third party networks you may access or be required to access in the course of using the
+    Services, and therefore, delays and disruption of or by other network transmissions are completely beyond our control.\n\nYou
+    understand and agree that the services available on the Site and mobile apps are provided “as is” and that we assume no
+    responsibility for the timeliness, deletion, missdelivery or failure to store any user communications or personalization
+    settings.\n\n<b>4. <u> SERVICES DESCRIPTION</u></b>\n\nThe App or Website grants You an option to obtain a monthly subscription
+    or premium subscription from the date You access and accept these Terms of Use. The services to be provided by the Company
+    shall be based on the subscription opted by You. All content added, created, uploaded, submitted, distributed, or posted to or
+    as a part of the Services (“User Content”), whether publicly posted or privately transmitted, is the sole responsibility of the
+    person who originated such content. Kloudworks uses reasonable security measures to protect the data we receive via the
+    Hardware and Services. However, we cannot guarantee that third parties will never defeat our security measures. You acknowledge
+    that you are using the Hardware and Services and sharing information (if any) is at your own risk.\n\n<b>5. <u>  REGISTRATION AND ACCOUNT
+    </u></b>\n\nBy registering for an Account through the App or Website: You shall a) only provide accurate and current information,
+    b) maintain the security of Your passwords and identification, c) promptly update the email address listed in connection with
+    Your user account (if applicable), and d) be fully responsible for all the activities carried out through the Account. You must
+    not set up an account on behalf of another individual or entity unless You are authorized by such person or entity to do so.\n\nTermination: Kloudworks reserves the right to modify or discontinue Your account at any time for any breach of the obligations
+    under this Terms of Use.\n\n<b>6. <u> FEES</u></b>\n\nThe services provided by Kloudworks through the App or Website, will be subject
+    to payment of subscription fees, based on the subscription plan (monthly or premium) opted by You or any legal entity or company
+    for You. Once the subscription plan is selected, the applicable subscriptions fees will be communicated to You or any legal entity
+    or company who has opted such subscription, on Website or App. Such subscription fees shall be paid in advance and shall be
+    non-refundable. You agree that, for any modification to the functionality of the services including any enhancements to the services,
+    We shall have the right to charge additional fees.\n\n<b>7. <u> LINKS TO THIRD PARTY SITES:</u></b>\n\nThe App or Website may contain
+    links to other websites owned and operated by third parties who are not related to the Website (“Linked Websites”). The Linked Websites
+    are not under the control of Kloudworks and Kloudworks is not responsible for the content of any Linked Websites or any hyperlink
+    contained in a Linked Website and makes no representation or warranty with respect to the content of any such third party sites.
+    Kloudworks provides these links to You as a convenience only and the inclusion of any link does not imply any endorsement of the
+    Linked Website by Kloudworks. Your link to any such Linked Website is entirely at your own risk. Kloudworksis not a party to any
+    transaction between You and a Linked Website. Your use of a Linked Website is subject to the terms and conditions of that site.\n\nThe
+    App or Website may also contain third party advertisements, if any. The display of such advertisements does not in any way imply an
+    endorsement or recommendation by of the relevant advertiser, its products or services. You are referred to the relevant advertiser
+    for all information regarding the advertisement and its products and/or services. Kloudworks accepts no responsibility for any
+    interaction between You and the relevant third party and is released from any liability arising out of or in any way connected with
+    such interaction.\n\n<b>8. <u> Ownership </u></b>\n\nYou acknowledge that the App or Website contains proprietary material of
+    Kloudworks which is protected by copyright and other laws respecting proprietary rights. Kloudworks retains all rights in the
+    material and media, including (without limitation) all copyright and other proprietary rights worldwide in all media. Any routine
+    and/or systematic redistribution of any portion of the products licensed herein is expressly prohibited. You may not and may
+    not permit others to: reproduce, publish, distribute, sell, or otherwise access or use any material retrieved from or contained
+    in or on the App or Website in any manner whatsoever that may infringe any copyright or proprietary interest of Kloudworks. You also
+    agree not to distribute, rent, sublicense, lease, transfer or assign the information or these Terms of Use; decompile, disassemble,
+    or otherwise reverse-engineer the App or Website or information contained in the App or Website.\n\nDuring the tenure of these Terms
+    of Use or thereafter, You shall not register or apply for registration directly or indirectly any intellectual property or any
+    intellectual property right similar to Kloudworks’s intellectual property rights.Subject to these Terms of Use, the ownership of
+    any content shared by You as a user shall remain with You and You shall be solely responsible for any claims that may arise from
+    the use of such content.\n\n<b>9. <u> PROHIBITED CONDUCT </u></b>\n\nYou agree not to engage in any of the following
+    activities:\n\n<u>Violating laws and rights</u> You may not a) use the App or Website for any illegal purpose or in violation of any local,
+    state, national, or international laws, b) violate or encourage others to violate any right of or obligation to a third party,
+    including but not limited to, by infringing, misappropriating, or violating intellectual property, confidentiality, or privacy rights.\n\n
+    <u>Solicitation</u> You may not use the App or Website or any information provided through the App or Website for the transmission of
+    advertising or promotional materials, including junk mail, spam, chain letters, or any other form of unsolicited or unwelcome solicitation.
+    \n\n<u>Disruption</u> You may not use the App or Website in any manner that could disable,overburden, damage, or impair the App or Website,
+    or interfere with any other party’s use and enjoyment of the App or Website; including by a) uploading or otherwise disseminating any virus,
+    adware, spyware, worm or other malicious code, or b) interfering with or disrupting any network, equipment, or server connected to or used
+    to provide any of the Services on the App or Website, or violating any regulation, policy, or procedure of any network, equipment, or server.
+    \n\n<u>Harming</u> others You may not share or transmit any content that is harmful, offensive,obscene, abusive, invasive of privacy,
+    defamatory, hateful or otherwise discriminatory, false or misleading, or incites an illegal act; \n\nYou may not intimidate or harass another
+    through the App or Websites.\n\n<u>Impersonation or unauthorized access:</u> You may not impersonate another person or entity,or misrepresent
+    your affiliation with a person or entity when using the App or Website; You may not use or attempt to use another’s account or personal
+    information; and You may not attempt to gain unauthorized access to the App or Website, or the computer systems or networks connected to
+    the App or Website, through hacking password mining or any other means.\n\n<b>10. <u> SUPPORT</u></b>\n\nThe Company shall use commercially
+    reasonable endeavours to make the Services available during the normal working hours, except for any unscheduled downtime or maintenance
+    required to be performed during normal business hours as a result of internet outage, power outage or any other unforeseeable event. The Company
+    may amend the support services policy in its sole and absolute discretion from time to time.\n\n<b>11. <u> REPRESENTATIONS AND WARRANTIES</u></b>
+    \n\nYou represent and warrant to Kloudworks that: a) you have full power and authority to enter into these Terms of Use; b) you own all your User
+    Content or have obtained all permissions, required to engage in your data collection using the Hardware, posting and other activities (and allow
+    Kloudworks to perform its obligations) in connection with the Hardware and Services without obtaining any further releases or consents; c) your
+    content and other activities in connection with the Services, and Kloudworks’ exercise of all rights and license granted by you herein, do not
+    and will not violate, infringe, or misappropriate any third party’s trademark, copyright, right of privacy or publicity, or other personal or
+    proprietary right, nor does any content contain any matter that is unlawful, threatening, abusive, harassing, defamatory, deceptive, fraudulent,
+    invasive of another’s privacy or tortious; and d) you are eighteen (18) years of age or older.\n\n<b>12. <u> DISCLAIMER OF WARRANTIES</u></b>\n\nYou
+    expressly acknowledge and agree that use of the app or website and the services is entirely at your own risk and that the app or website and the
+    services therein are provided on an "as is" or "as available" basis, without any warranties of any kind. All express and implied warranties,
+    including, without limitation, the warranties of merchantability, fitness for a particular purpose, and non-infringement of proprietary rights
+    are expressly disclaimed to the fullest extent permitted by law. To the fullest extent permitted by law Kloudworks, its officers, directors,
+    employees, and agents disclaim all warranties, express or implied, in connection with the app or website the services and your use thereof.
+    Kloudworks makes no warranties or representations about the accuracy or completeness of the services or content of the app or website or the
+    details and contents shared or the content of any third party websites linked to the app or website and assumes no liability or responsibility
+    for any (i) errors,mistakes, or inaccuracies of content, (ii) personal injury or property damage, of any nature whatsoever, resulting from your
+    ccess to and use of the app or website, (iii) any interruption or cessation of transmission to or from the app or website, (iv) any bugs, viruses,
+    trojan horses, or the like which may be transmitted to or through the app or website by any third party, and/or (v) any errors or omissions in any
+    content or for any loss or damage of any kind incurred as a result of the use of any content posted, emailed, communicated, transmitted, or
+    otherwise made available via the app or website or the services.\n\n<b>13. <u> LIMITATION OF LIABILITY</u></b>\n\nIn no event shall Kloudworks, its
+    officers, directors, employees, or agents, be liable for direct,indirect, incidental, special, consequential or exemplary damages (even if Kloudworks
+    has been advised of the possibility of such damages), resulting from any aspect of your use of the app or website or the service, including without
+    limitation whether the damages arise from use or misuse of the app or website or the services, from inability to use the app or website or the services,
+    or the interruption, suspension, modification, alteration, or termination of the app or website or the services. such limitation of liability shall also
+    apply with respect to damages incurred by reason of other services or the products or rendered through or advertised in connection with the app or website
+    or the services or any links on the app or website, as well as by reason of any information, opinions or advice received through or advertised in connection
+    with the app or website or the services or any links on the app or website. These limitations shall apply to the fullest extent permitted by law. You
+    specifically acknowledge and agree that Kloudworks shall not be liable for details and contents or the defamatory, offensive, or illegal conduct of any
+    user or third party and that the risk of harm or damage from the foregoing rests entirely with you. The app or website is controlled and offered by the
+    Kloudworks from its facilities in India.\n\n<b>14. <u> INDEMNIFICATION </u></b>\n\nYou shall defend, indemnify, and hold harmless Kloudworks from all
+    liabilities, claims, and expenses, including reasonable attorneys’ fees, that arise from or relate to your use or misuse of, or access to, the Hardware
+    or Services, violation of these Terms of Use, or infringement by you, or any third party using your account or identity in the Services, of any
+    intellectual property or other right of any person or entity. We reserve the right to assume the exclusive defence and control of any matter otherwise
+    subject to indemnification by you, in which event you will assist and cooperate with us in asserting any available defences.\n\n<b>15. <u>  TERMINATION </u></b>
+    \n\nIf You wish to terminate this Agreement, You may immediately stop accessing or using the App or Website. You understand that in such an event, Kloudworks
+    shall not be liable to refund any fees paid by You.\n\nYour right to access and use the App or Website terminates automatically upon your material breach of any
+    of the terms of these Terms of Use.\n\nSurvival: The disclaimer of warranties, the limitation of liability, indemnity and the jurisdiction and applicable law
+    provisions will survive any termination.\n\n<b>16. <u> MISCELLANEOUS TERMS </u></b>\n\n<u>Choice of Law and Jurisdiction</u>: These Terms of Use are governed by
+    and construed according to the laws of India, the acceptance of the Terms of Use shall be deemed to have been given at Pune, Maharashtra, India and the courts
+    in Pune will have exclusive jurisdiction to entertain any proceedings in any way relating to or concerning these Terms of Use or any rights, duties, obligations
+    or liabilities arising there under to the exclusion of all other courts in India.\n\n<u>Severability</u>: If any part of these Terms of Use is held to be invalid or
+    unenforceable by any law or regulation or final determination of a competent court or tribunal, that provision will be deemed severable and will not affect the
+    validity and enforceability of the remaining provisions.\n\n<u>Entire Agreement</u>: These Terms of Use constitute the entire agreement between You and Kloudworks
+    relating to this subject matter and supersede any and all prior communications and/or agreements between You and Kloudworks relating to this subject matter.</string>
+    <string name="no_vehicle_found">No vehicle name available please fill vehicle master</string>
+    <string name="maint_entry">Maintenance Entry</string>
+    <string name="fuel_entry">Fuel Entry</string>
+    <string name="carlocation">Car Location</string>
+    <string name="createTrip">Create Trip</string>
+    <string name="view_trip">Trips</string>
+    <string name="sdvertise">Adverise</string>
+    <string name="alertssd">Alerts</string>
+    <string name="vhealth">Health</string>
+    <string name="fuelt">Fuel Tracker</string>
+    <string name="batterrry">Measured instantaneously. To get better estimate of battery health,wait for about 10 seconds before starting the engine i.e. with Dashboard lights ON (keys in ACC-ON position).Battery health may be an issue if this voltage is below 11.5V</string>
+    <string name="coolant_tempreture">Coolant Temperature may go up 110°C. There may be several reasons for unusually high temperatures above this value - including leakage, blocked radiator, low coolant level, faulty sensor or others.</string>
+    <string name="air_fuel_control">This system controls the Air - Fuel ratio that is injected in the engine - this ratio should be within a certain limit for the engine to operate properly.\nA problem within this system may affect fuel efficiency as more fuel may be injected to meet the exact ratio.</string>
+    <string name="fuel_control">The fule injector (injector) system - monitors and controls the amount of fuel injected in the engine. Proper functioning of this system is required for peak engine performance, fuel economy and emission controls. Problems in this system could be caused because of damaged/choked injectors among several others.</string>
+    <string name="ignitionMisfire">This system monitors engine misfires.Misfiring is bad for catalytic converters (which is responsible for limiting pollution) as it means unburnt fuel which leads to dirty exhaust.\n There could be several triggers for misfires including misbehaving spark plugs, injectors or even faulty sensors among others</string>
+    <string name="auxillaryEmission">This system monitors the performance of Exhaust Gas Recirculation, Secondary Air Injection, Catalyst Health or the Evaporation System (which controls fuel vapours).\n All of these subsystems are directly responsible for vehicle emission (pollution) controls</string>
+    <string name="speedIdelControl">These set of monitors are for checking malfunction in speed sensors, the value controlling idle speed of engine, engine oil pressure among several other parameters.</string>
+    <string name="computerSystem">This system monitors errors in various computer subsystem in the vehicle or in communication between this subsystems.</string>
+    <string name="transsmissionTransaxle">The transmission system consists of the complete drivetrain including clutch, gearbox, rear axie etc.\n A problem in the transmission system affects the vehicle drivability. Problems could be due to speed sensor malfunction, problems with gear ratio, torque convertor etc.</string>
+    <string name="setOthers">All problems realated to vehicle Chassis, Body (ex - Airbags, Seatbelts) or Internal Communication between vehicles computer sub systems are reported in this section.</string>
+
+
+    <string-array name="service_type">
+        <item>Car Wash</item>
+        <item>Oil Service</item>
+        <item>Tier Rotation</item>
+        <item>Wheel Balancing</item>
+        <item>Battery Maintenance</item>
+        <item>Break Maintenance</item>
+        <item>Electrical Maintenance</item>
+        <item>Break down</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="service_other_break_down">
+        <item>Tier Repair</item>
+        <item>Battery Discharge</item>
+        <item>Electrical Fault</item>
+        <item>Mechanical Failure</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <string-array name="selec_dwm">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+
+    <string-array name="months">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sept</item>
+        <item>Mar</item>
+        <item>Mar</item>
+        <item>Mar</item>
+    </string-array>
+    <string name="title_activity_edite_geofence">EditeGeofenceActivity</string>
+
+    <string name="no_location_data_provided">No data Provided</string>
+    <string name="service_not_available">service not available</string>
+    <string name="invalid_lat_long_used">invalid lat long</string>
+    <string name="no_address_found">no address found</string>
+    <string name="select_location">Select Location</string>
+    <string name="title_activity_edit_feo_fence">Map</string>
+
+</resources>

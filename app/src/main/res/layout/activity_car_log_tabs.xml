@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_color">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar" />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/carLogRecyclerView"
+            android:layout_width="fill_parent"
+
+            android:layout_height="fill_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/notificationHideRelativeLayout"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgHideLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_loyalty_black_48dp"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Text Here"
+            android:layout_marginTop="10pt"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imgHideLayout"
+            android:textColor="#C5CAE9"
+            android:id="@+id/textViewHideLayout"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

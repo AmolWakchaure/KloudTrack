@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_display_notification_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="snsystems.obd.notificationalerts.DisplayNotificationDetailsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/a"
+            android:layout_width="fill_parent"
+            android:layout_height="25pt"
+            android:background="@color/screen_color"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.8"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/notificationNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5pt"
+                    android:textStyle="bold"
+                    android:text="Alert Name" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|center_vertical">
+
+                    <TextView
+                        android:id="@+id/alertDateTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5pt"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:text="Date Time" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_horizontal|center_vertical">
+
+                    <TextView
+                        android:id="@+id/levelTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:text="Level" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/df"
+            android:layout_width="fill_parent"
+            android:layout_height="0.1pt"
+            android:layout_below="@+id/a"
+            android:background="@color/screen_color" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/notification_alerts_details"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/df"
+            android:layout_height="fill_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+</RelativeLayout>

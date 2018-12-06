@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:layout="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+     >
+
+    <RelativeLayout
+        android:id="@+id/container_draer_image"
+        android:layout_width="280dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/primaryColor">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:text="User Name"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/textViewUserNAme"
+            android:layout_marginLeft="3pt"
+            android:layout_marginBottom="3pt"
+            android:layout_alignParentBottom="true"
+
+
+             />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container_draer_image">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
+
+
+

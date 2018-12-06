@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_display_advertise"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="snsystems.obd.advertise.DisplayAdvertiseActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="20pt">
+
+            <ExpandableListView
+                android:id="@+id/expandableListviewForDisplayAdvertise"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:childDivider="#00000000"
+                android:divider="@color/primaryColor"
+                android:dividerHeight="1dp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/notificationHideRelativeLayout"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgHideLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_loyalty_black_48dp"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Text Here"
+            android:layout_marginTop="10pt"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imgHideLayout"
+            android:textColor="#C5CAE9"
+            android:id="@+id/textViewHideLayout"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

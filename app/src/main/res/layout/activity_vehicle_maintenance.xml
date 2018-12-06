@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_vehicle_maintenance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="snsystems.obd.maintenance.VehicleMaintenanceActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar" />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar"
+
+        android:background="@color/screen_color">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30pt"
+            android:background="@color/primaryColor">
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10pt">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/a"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2.5dp"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="8dp"
+                    card_view:contentPadding="5dp">
+
+
+                    <RelativeLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="selectVehicle">
+
+                        <TextView
+                            android:id="@+id/df"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3pt"
+                            android:layout_marginTop="3pt"
+                            android:text="Vehicle Name*"
+                            android:textColor="@color/primaryColor" />
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/df"
+                            android:layout_marginTop="5pt"
+                            android:background="@drawable/round_gray">
+
+                            <View
+                                android:id="@+id/view2"
+                                android:layout_width="fill_parent"
+
+                                android:layout_height="8pt" />
+
+
+                            <TextView
+                                android:id="@+id/vehicleNameSpinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/view2"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5pt"
+                                android:text="Select Vehicle"
+                                android:textColor="@color/black">
+
+                            </TextView>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="8pt"
+                                android:layout_below="@+id/vehicleNameSpinner" />
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/ss"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/a"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5pt"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:cardElevation="4dp"
+                    card_view:contentPadding="5dp">
+
+                    <RelativeLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/a"
+                        android:layout_margin="5pt">
+
+                        <TextView
+                            android:id="@+id/dssf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3pt"
+                            android:layout_marginTop="3pt"
+                            android:text="Maintenance Date*"
+                            android:textColor="@color/primaryColor" />
+
+                        <LinearLayout
+                            android:id="@+id/d"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dssf"
+                            android:layout_marginTop="6pt"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent">
+
+                                    <TextView
+                                        android:id="@+id/maintenanceDateTextView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="5pt"
+                                        android:text="yyyy-mm-dd"
+                                        android:textColor="@color/black" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="5"
+                                android:clickable="true"
+                                android:onClick="selectDate">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:src="@drawable/ic_date_range_black_24dp" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/dcddssf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/d"
+                            android:layout_marginLeft="3pt"
+                            android:layout_marginTop="5pt"
+                            android:text="Maintenance Type*"
+                            android:textColor="@color/primaryColor" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/dfgf"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dcddssf"
+                            android:layout_marginTop="5pt"
+                            android:background="@drawable/round_gray"
+                            android:onClick="selectMaintenaneType">
+
+
+                            <View
+                                android:id="@+id/viewddd2"
+
+                                android:layout_width="fill_parent"
+
+                                android:layout_height="7pt" />
+
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="7pt"
+                                android:layout_below="@+id/maintenanceTypeSpinner" />
+
+                            <TextView
+                                android:id="@+id/maintenanceTypeSpinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/viewddd2"
+                                android:layout_marginLeft="5pt"
+                                android:text="Select Maintenance Type"
+                                android:textColor="@color/black">
+
+                            </TextView>
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/dfcc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dfgf"
+                            android:layout_marginLeft="3pt"
+                            android:layout_marginTop="5pt"
+                            android:text="Odometer Reading*"
+                            android:textColor="@color/primaryColor" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/odometerReadingEditext"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dfcc"
+                            android:layout_marginLeft="4pt"
+                            android:layout_marginTop="3pt"
+                            android:hint="Odometer Reading"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:theme="@style/autocompleteHomeblack"></android.support.v7.widget.AppCompatEditText>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/dd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ss"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5pt"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:cardElevation="4dp"
+                    card_view:contentPadding="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5pt">
+
+                        <TextView
+                            android:id="@+id/dfdddcc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3pt"
+                            android:text="Maintenance Cost"
+                            android:textColor="@color/primaryColor" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/costEditext"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dfdddcc"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="4pt"
+                            android:layout_marginTop="3pt"
+                            android:hint="Cost*"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:theme="@style/autocompleteHomeblack">
+
+                        </android.support.v7.widget.AppCompatEditText>
+
+                        <TextView
+                            android:id="@+id/dfddddddcc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/costEditext"
+                            android:layout_marginLeft="3pt"
+                            android:layout_marginTop="3pt"
+                            android:text="Lov Alerts*"
+                            android:textColor="@color/primaryColor" />
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dfddddddcc"
+                            android:layout_marginTop="5pt"
+                            android:background="@drawable/round_gray"
+                            android:onClick="selectLovAlerts">
+
+                            <View
+                                android:id="@+id/viewdddff2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="7pt" />
+
+
+                            <TextView
+                                android:id="@+id/lovAlertsSpinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/viewdddff2"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5pt"
+                                android:text="Select Lov Alert"
+                                android:textColor="@color/black">
+
+                            </TextView>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="7pt"
+                                android:layout_below="@+id/lovAlertsSpinner" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="20pt"
+                    android:layout_below="@+id/dd">
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8pt"
+            android:layout_marginRight="10pt"
+            android:clickable="true"
+            android:onClick="saveMaintenanceRecord"
+            android:src="@drawable/ic_done_black_24dp"
+            app:backgroundTint="@color/primaryColor"
+            app:layout_anchorGravity="bottom"
+            app:rippleColor="@color/primaryColorDark" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

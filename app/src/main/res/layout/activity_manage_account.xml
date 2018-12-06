@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/screen_color">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40pt"
+                    android:background="@color/primaryColor">
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/aa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6pt"
+
+                    card_view:cardCornerRadius="3dp">
+
+                    <RelativeLayout
+                        android:id="@+id/asd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10pt">
+
+                        <TextView
+                            android:id="@+id/a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Device ID"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/txt_device_id"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/a"
+                            android:layout_marginTop="3pt"
+                            android:background="@drawable/gradient_text_view"
+                            android:text=""
+                            android:theme="@style/autocompleteHome"
+                            android:gravity="center"
+                            android:textColor="@color/black_semi_transparent" />
+
+                        <TextView
+                            android:id="@+id/b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_device_id"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="1.5pt"
+                            android:text="(Click on device id to update device info)"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/fentBlackk" />
+
+                        <TextView
+                            android:id="@+id/c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/b"
+                            android:layout_marginTop="10pt"
+                            android:text="Device Name"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_device_name"
+                            android:layout_marginTop="10pt"
+                            android:text="Active Until"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/txt_active_date"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/d"
+                            android:layout_marginTop="3pt"
+                            android:background="@drawable/gradient_text_view"
+                            android:text=""
+                            android:theme="@style/autocompleteHome"
+                            android:gravity="center"
+                            android:textColor="@color/black_semi_transparent" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_below="@+id/txt_active_date" />
+
+                        <TextView
+                            android:id="@+id/txt_device_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/gradient_text_view"
+                            android:text=""
+                            android:theme="@style/autocompleteHome"
+                            android:gravity="center"
+                            android:textColor="@color/black_semi_transparent"
+                            android:layout_below="@+id/c"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_below="@+id/aa"
+                    android:layout_marginLeft="10pt"
+                    android:layout_marginRight="10pt"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/round_buttonn"
+                    android:onClick="addDevice"
+                    android:text="Click to Add New Device"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

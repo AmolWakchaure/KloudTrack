@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_geofence"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="snsystems.obd.geofencesnehal.EditGeofence">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <fragment xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map_geo_fence_edit"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.sample.sishin.maplocation.MapsActivity" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="right">
+
+            <Button
+                android:id="@+id/btn_edit_geo_fence"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5pt"
+                android:background="@drawable/round_buttonn"
+                android:onClick="edit_geo_fence"
+                android:text="OK"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <!--<android.support.v7.widget.AppCompatSeekBar-->
+    <!--android:id="@+id/radiusSeekbar_edit"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/colorWhite"-->
+    <!--android:max="5000" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#59000000"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="10pt"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center_vertical"
+                android:text="Edit Radius :"
+                android:layout_marginLeft="2pt"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                android:id="@+id/radiusSeekbar_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                app:dsb_indicatorColor="@color/primaryColor"
+                app:dsb_indicatorSeparation="5dp"
+                app:dsb_max="5"
+                app:dsb_min="1"
+                app:dsb_progressColor="@color/primaryColor"
+                app:dsb_rippleColor="@color/fb_button_pressed"
+                app:dsb_scrubberHeight="2pt"
+                app:dsb_thumbSize="10pt"
+                app:dsb_trackColor="@color/fb_button_pressed" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/edit_geo_radius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2pt"
+            android:layout_marginLeft="2pt"
+            android:drawableLeft="@drawable/ic_turned_in_black_24dp"
+            android:drawablePadding="4dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

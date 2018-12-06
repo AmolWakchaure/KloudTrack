@@ -1,0 +1,107 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <!--action bar color-->
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="colorAccent">@color/accentColor</item>
+    </style>
+
+    <style name="MyCustomToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">#ffffff</item>
+        <!--action bar text color-->
+        <item name="android:textColorSecondary">#ffffff</item>
+        <!--overflow icon color-->
+    </style>
+
+    <style name="TextLabel" parent="ThemeOverlay.AppCompat.Light">
+        //hint color And Label Color in False State
+        <item name="android:textColorHint">@color/primaryColor</item>
+        <item name="colorControlNormal">@color/editextBottomLine</item>
+        <item name="android:textSize">20sp</item>
+        //Label color in True State And Bar Color False And True State
+        <item name="colorAccent">@color/primaryColor</item>
+
+        <item name="colorControlActivated">@color/primaryColor</item>
+    </style>
+
+    <style name="autocompleteHome" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorControlNormal">@color/editextBottomLine</item>
+        <item name="android:textColorHint">@color/primaryColor</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/accentColorfent</item>
+
+    </style>
+
+    <style name="autocompleteHomeblack" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorControlNormal">@color/editextBottomLine</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/accentColorfent</item>
+
+    </style>
+
+    <style name="editextThh" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/colorWhite</item>
+        <item name="android:textSize">8pt</item>
+
+    </style>
+
+    <style name="EditTextHint" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:background">@color/primaryColor</item>
+    </style>
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_bale_background</item>
+        <item name="android:textColor">@color/colorWhite</item>
+
+    </style>
+
+    <style name="save_maintenance">
+        <item name="android:background">@drawable/ic_date_range_black_24dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+
+    </style>
+
+    <style name="WelcomeHeadingAppearance" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">@dimen/welcome_text_heading</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="WelcomeContentAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/welcome_content</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ToolbarSpinnerTheme" parent="Theme.AppCompat">
+        <item name="android:spinnerItemStyle">@style/TextAppearanceSpinnerItem</item>
+    </style>
+
+    <style name="TextAppearanceSpinnerItem">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="PopupMenuStyle" parent="Theme.AppCompat.Light">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+</resources>

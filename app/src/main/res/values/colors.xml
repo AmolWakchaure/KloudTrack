@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#0066B3</color><!--action bar color -->
+    <color name="primaryColorDark">#90CAF9</color><!--action bar upper side color-->
+    <color name="accentColor">#0066B3</color>
+    <color name="accentColorfent">#455A64</color>
+    <color name="colorHeighlight">#E1BEE7</color>
+
+    <!--Editext-->
+    <color name="editextHintColor">#0D47A1</color>
+    <color name="editextBottomLine">#009688</color>
+    <color name="usernameCollege">#B71C1C</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="transperent">#00000000</color>
+
+    <!--Baner-->
+    <color name="bannerColr">#2D89AC</color>
+    <color name="background_Color">#e5eff7</color>
+    <!--AutoComplete-->
+    <color name="autoCompleteHintColor">#880E4F</color>
+    <color name="firstsecondColor">#263238</color>
+    <color name="fentBlack">#37474F</color>
+    <color name="viewApponment">#5C6BC0</color>
+    <color name="rescheduleApponment">#F48FB1</color>
+    <color name="spinner_base_color">#FF6F00</color>
+    <color name="drawer_row">#EEEEEE</color>
+    <color name="material_red_400">#EF5350</color>
+    <color name="red">#990000</color>
+    <color name="green">#009900</color>
+    <color name="blue">#000099</color>
+    <color name="orange">#FF9900</color>
+    <color name="black">#000000</color>
+    <color name="blue_dark">#0066B3</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <!--drawer-->
+    <color name="colorFentBlack">#37474F</color>
+    <color name="add">#E6263238</color>
+    <color name="fb_button_normal">#0073CC</color>
+    <color name="fb_button_pressed">#93d2ff</color>
+
+
+    <!--button-->
+    <color name="primaryButton">#F06292</color>
+
+    <!--slides-->
+    <color name="slide_one">#0097A7</color>
+    <color name="slide_two">#7C4DFF</color>
+    <color name="slide_three">#F48FB1</color>
+
+    <color name="screen_color">#E0E0E0</color>
+    <color name="screen_colorrr">#F5F5F5</color>
+    <color name="screen_coldfor">#BDBDBD</color>
+    <color name="colorTransperent">#80000000</color>
+    <color name="editext_back">#E0F2F1</color>
+    <color name="header_back">#B2DFDB</color>
+    <color name="indicator">#ecd95a</color>
+
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="circle_selected">#888</color>
+
+
+    <!--fuel dial-->
+    <color name="fuel_gauge_background">#e4e4e4</color>
+    <color name="needle_color">#0000ff</color>
+    <color name="text_color">#000000</color>
+    <color name="line_color">#000000</color>
+    <color name="label_color">#00ff00</color>
+
+    <color name="fentBlackk">#757575</color>
+
+
+
+
+
+
+
+
+</resources>

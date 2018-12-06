@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="snsystem.geofencing.activity.FeedbackActivity">
+
+    <item
+        android:id="@+id/view_reports"
+        android:orderInCategory="100"
+        android:title="Reports"
+        android:icon="@drawable/ic_reorder_black_24dp"
+        app:showAsAction="always" />
+
+</menu>

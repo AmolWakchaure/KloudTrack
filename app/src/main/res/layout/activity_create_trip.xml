@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar" />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+
+                android:layout_margin="15pt">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/sourceTextInputLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:theme="@style/TextLabel">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/sourceAddressEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="9dp"
+                        android:hint="source address"
+                        android:inputType="textNoSuggestions"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="9dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/primary_text_light"></android.support.v7.widget.AppCompatEditText>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/sourceRecyclerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sourceTextInputLayout"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="vertical" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/destinatioTextInputLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sourceRecyclerView"
+                    android:theme="@style/TextLabel">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/destinationAddressEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="9dp"
+                        android:hint="destination address"
+                        android:inputType="textNoSuggestions"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="9dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/primary_text_light"></android.support.v7.widget.AppCompatEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/destinationRecyclerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/destinatioTextInputLayout"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="vertical" />
+
+
+                <Button
+                    android:id="@+id/buttonStartTrip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/destinationRecyclerView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5pt"
+
+                    android:background="@drawable/round_buttonn"
+                    android:text="Start Trip"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite" />
+
+                <Button
+                    android:id="@+id/buttonStopTrip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/buttonStartTrip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5pt"
+                    android:background="@drawable/round_red"
+                    android:text="Stop Trip"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite" />
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30pt"
+                    android:layout_below="@+id/buttonStopTrip">
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabCreateTrips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10pt"
+        android:layout_marginBottom="10pt"
+
+        android:clickable="true"
+        android:onClick="viewTrip"
+        android:src="@drawable/ic_view_trip_black_24dp"
+
+        app:backgroundTint="@color/primaryColor"
+        app:layout_anchorGravity="bottom"
+        app:rippleColor="@color/screen_color" />
+
+</RelativeLayout>

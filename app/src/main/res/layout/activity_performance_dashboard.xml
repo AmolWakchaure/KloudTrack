@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_color">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar">
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5pt"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        card_view:cardCornerRadius="4dp"
+                        card_view:contentPadding="5dp">
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5pt"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/dailyWeeklyMonthlyeButton"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3pt"
+                                android:onClick="selectDailyWeeklyMonthly"
+                                android:background="@drawable/ic_dropdown"
+                                android:gravity="left|center_vertical"
+                                android:paddingLeft="5pt"
+                                android:textSize="7pt"
+                                android:text="Daily"
+                                android:textAllCaps="false" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/hideCardView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:layout_marginTop="5pt"
+                        card_view:cardCornerRadius="4dp"
+                        card_view:contentPadding="5dp">
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5pt"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2pt"
+                                android:text="Select Month*"
+                                android:textSize="7pt"
+                                android:textColor="@color/primaryColor" />
+
+                            <Button
+                                android:id="@+id/selectMonthButton"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3pt"
+                                android:onClick="selectMonthly"
+                                android:background="@drawable/ic_dropdown"
+                                android:gravity="left|center_vertical"
+                                android:textSize="7pt"
+                                android:paddingLeft="5pt"
+                                android:text="Month"
+                                android:textAllCaps="false" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5pt"
+                        card_view:cardCornerRadius="4dp"
+                        card_view:contentPadding="5dp">
+
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5pt"
+
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/dateTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="7pt"
+                                android:text="Date"
+                                android:textColor="@color/primaryColor" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5pt"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textSize="7pt"
+                                        android:text="Total Distance" />
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textSize="7pt"
+                                        android:text="Avg Speed" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2pt"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:id="@+id/totalDistanceTextView"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textSize="7pt"
+                                        android:text="0"
+                                        android:textColor="@color/black" />
+
+                                    <TextView
+                                        android:id="@+id/favgSpeedTextView"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="0"
+                                        android:textSize="7pt"
+                                        android:textColor="@color/black" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="0.1pt"
+                                android:layout_marginTop="4pt"
+                                android:background="@color/screen_color" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5pt"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="7pt"
+                                        android:layout_weight="1"
+                                        android:text="Halts" />
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="7pt"
+                                        android:layout_weight="1"
+                                        android:text="Alerts" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2pt"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:id="@+id/haltsTextView"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textSize="7pt"
+                                        android:text="0"
+                                        android:textColor="@color/black" />
+
+                                    <TextView
+                                        android:id="@+id/alertsTextView"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="7pt"
+                                        android:layout_weight="1"
+                                        android:text="0"
+                                        android:textColor="@color/black" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="0.1pt"
+                                android:layout_marginTop="4pt"
+                                android:background="@color/screen_color" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5pt"
+                        card_view:cardCornerRadius="4dp"
+                        card_view:contentPadding="5dp">
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5pt"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="7pt"
+                                android:text="Driving Alerts"
+                                android:textColor="@color/primaryColor" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5pt"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                 <LinearLayout
+                                     android:layout_width="fill_parent"
+                                     android:orientation="horizontal"
+                                     android:weightSum="3"
+                                     android:layout_height="15pt">
+
+                                     <TextView
+                                         android:id="@+id/rpmAlertTextView"
+                                         android:layout_width="fill_parent"
+                                         android:layout_height="fill_parent"
+                                         android:text="0"
+                                         android:textColor="@color/colorWhite"
+                                         android:background="#4527A0"
+                                         android:layout_marginLeft="5pt"
+                                         android:layout_marginRight="5pt"
+                                         android:gravity="center"
+                                         android:layout_weight="1"/>
+
+                                     <TextView
+                                         android:id="@+id/speedAlertTextView"
+                                         android:layout_width="fill_parent"
+                                         android:layout_height="fill_parent"
+                                         android:text="0"
+                                         android:background="#4E342E"
+                                         android:layout_marginLeft="5pt"
+                                         android:textColor="@color/colorWhite"
+                                         android:layout_marginRight="5pt"
+                                         android:gravity="center"
+                                         android:layout_weight="1"/>
+                                     <TextView
+                                         android:id="@+id/troubleAlertTextView"
+                                         android:layout_width="fill_parent"
+                                         android:layout_height="fill_parent"
+                                         android:text="0"
+                                         android:layout_marginLeft="5pt"
+                                         android:background="#00695C"
+                                         android:textColor="@color/colorWhite"
+                                         android:layout_marginRight="5pt"
+                                         android:gravity="center"
+                                         android:layout_weight="1"/>
+
+
+
+                                 </LinearLayout>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="7pt">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="15pt"
+                                        android:layout_height="10pt"
+                                        android:background="#4527A0"
+
+                                        android:layout_weight="1"/>
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:text="RPM Alert"
+                                        android:paddingLeft="5pt"
+                                        android:gravity="center_vertical"
+                                        android:layout_weight="2"/>
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3pt"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="15pt"
+                                        android:layout_height="10pt"
+                                        android:background="#4E342E"
+                                        android:layout_weight="1"/>
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:text="Speed Alert"
+                                        android:paddingLeft="5pt"
+                                        android:gravity="center_vertical"
+                                        android:layout_weight="2"/>
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3pt"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="15pt"
+                                        android:layout_height="10pt"
+                                        android:background="#00695C"
+                                        android:layout_weight="1"/>
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:text="Trouble Code Alert"
+                                        android:paddingLeft="5pt"
+                                        android:gravity="center_vertical"
+                                        android:layout_weight="2"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="0.1pt"
+                                android:layout_marginTop="4pt"
+                                android:background="@color/screen_color" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="20pt"></LinearLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

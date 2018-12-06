@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:id="@+id/aa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/vehicleNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:textSize="7pt"
+            android:textColor="@color/fentBlack"
+            android:layout_marginTop="3pt"
+            android:text="Vehicle Name" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/fentBlack"
+            android:layout_marginLeft="5pt"
+            android:textSize="7pt"
+            android:layout_marginTop="3pt"
+            android:text="Service Date" />
+
+        <TextView
+            android:id="@+id/costTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/fentBlack"
+            android:layout_marginLeft="5pt"
+            android:textSize="7pt"
+            android:layout_marginTop="3pt"
+            android:text="Service Charges" />
+
+        <TextView
+            android:id="@+id/serviceTypeTextView"
+            android:layout_width="wrap_content"
+            android:textColor="@color/fentBlack"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:textSize="7pt"
+            android:layout_marginTop="3pt"
+            android:text="Service Type" />
+
+        <TextView
+            android:id="@+id/remarkTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/fentBlack"
+            android:layout_marginLeft="5pt"
+            android:layout_marginTop="3pt"
+            android:textSize="7pt"
+            android:text="Service Remark" />
+
+        <TextView
+            android:id="@+id/serviceStatusTextView"
+            android:layout_width="wrap_content"
+            android:textColor="@color/fentBlack"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:layout_marginTop="3pt"
+            android:textSize="7pt"
+            android:text="Service Status" />
+
+        <TextView
+            android:id="@+id/serviceOtherProblemsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/fentBlack"
+            android:layout_marginLeft="5pt"
+            android:textSize="7pt"
+            android:layout_marginTop="3pt"
+            android:text="Service Other Problems" />
+
+        <Button
+            android:id="@+id/editeLinearLayout"
+            android:layout_width="40pt"
+            android:layout_marginLeft="3pt"
+            android:layout_marginTop="3pt"
+            android:text="Edit"
+            android:clickable="true"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:background="@drawable/round_buttonn"
+            android:layout_height="15pt" />
+
+        <TextView
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2pt"
+        android:layout_below="@+id/aa"
+        android:background="@color/screen_color" />
+
+
+</RelativeLayout>

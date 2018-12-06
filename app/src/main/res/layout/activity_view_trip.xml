@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar" />
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ser"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="25pt"-->
+        <!--android:layout_below="@+id/toolbar"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_weight="2">-->
+
+            <!--<Button-->
+                <!--android:id="@+id/fromDateButton"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:background="@color/primaryColor"-->
+                <!--android:onClick="selectFromDate"-->
+                <!--android:text="from Date"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textColor="@color/colorWhite" />-->
+
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:layout_weight="2">-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/toDateButton"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:background="@color/primaryColor"-->
+                    <!--android:onClick="selectToDate"-->
+                    <!--android:text="to Date"-->
+                    <!--android:textAllCaps="false"-->
+                    <!--android:textColor="@color/colorWhite" />-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:background="@color/primaryColor"-->
+                <!--android:onClick="searchTrip"-->
+                <!--android:gravity="center_horizontal|center_vertical"-->
+                <!--android:layout_weight="2">-->
+
+               <!--<ImageView-->
+                   <!--android:layout_width="wrap_content"-->
+                   <!--android:layout_height="wrap_content"-->
+                   <!--android:src="@drawable/ic_search_trip_black_24dp"/>-->
+
+
+            <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar">
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/trips_details_RecyclerView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_vehicle_maintenance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="snsystems.obd.maintenance.VehicleMaintenanceActivity">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/screen_color">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30pt"
+            android:background="@color/primaryColor">
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="6pt">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/a"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2.5dp"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="8dp"
+                    card_view:contentPadding="5dp">
+
+
+                    <RelativeLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="selectVehicle">
+
+                        <TextView
+                            android:id="@+id/df"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3pt"
+                            android:layout_marginTop="3pt"
+                            android:text="Vehicle Name*"
+                            android:textColor="@color/primaryColor" />
+
+                        <RelativeLayout
+                            android:id="@+id/selectVehicleRelativeLayout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/df"
+                            android:layout_marginTop="5pt"
+                            android:background="@drawable/round_gray"
+                            android:clickable="true">
+
+                            <View
+                                android:id="@+id/view2"
+                                android:layout_width="fill_parent"
+
+                                android:layout_height="8pt" />
+
+
+                            <TextView
+                                android:id="@+id/vehicleNameSpinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/view2"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5pt"
+                                android:text="Select Vehicle"
+                                android:textColor="@color/black">
+
+                            </TextView>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="8pt"
+                                android:layout_below="@+id/vehicleNameSpinner" />
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/ss"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/a"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5pt"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:cardElevation="4dp"
+                    card_view:contentPadding="5dp">
+
+                    <RelativeLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/a"
+                        android:layout_margin="5pt">
+
+                        <TextView
+                            android:id="@+id/dssf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3pt"
+                            android:layout_marginTop="3pt"
+                            android:text="Service Date*"
+                            android:textColor="@color/primaryColor" />
+
+                        <LinearLayout
+                            android:id="@+id/d"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dssf"
+                            android:layout_marginTop="6pt"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent">
+
+                                    <TextView
+                                        android:id="@+id/maintenanceDateTextView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="5pt"
+                                        android:text="yyyy-mm-dd"
+                                        android:textColor="@color/black" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/selectServiceDateLinearLayout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="5"
+                                android:clickable="true">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent">
+
+                                    <ImageView
+                                        android:layout_width="25pt"
+                                        android:layout_height="25pt"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:src="@drawable/ic_select_date" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/dssfdfgfhfg"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_below="@+id/d"-->
+                            <!--android:layout_marginLeft="3pt"-->
+                            <!--android:layout_marginTop="3pt"-->
+                            <!--android:text="Service Due Date"-->
+                            <!--android:textColor="@color/primaryColor" />-->
+
+                        <!--<LinearLayout-->
+                            <!--android:id="@+id/dfgdgdfg"-->
+                            <!--android:layout_width="fill_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_below="@+id/dssfdfgfhfg"-->
+                            <!--android:layout_marginTop="6pt"-->
+                            <!--android:orientation="horizontal">-->
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="fill_parent"-->
+                                <!--android:layout_height="fill_parent"-->
+                                <!--android:layout_weight="1">-->
+
+                                <!--<RelativeLayout-->
+                                    <!--android:layout_width="fill_parent"-->
+                                    <!--android:layout_height="fill_parent">-->
+
+                                    <!--<TextView-->
+                                        <!--android:id="@+id/maintenanceDueDateTextView"-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:layout_centerVertical="true"-->
+                                        <!--android:layout_marginLeft="5pt"-->
+                                        <!--android:text="yyyy-mm-dd"-->
+                                        <!--android:textColor="@color/black" />-->
+                                <!--</RelativeLayout>-->
+
+                            <!--</LinearLayout>-->
+
+                            <!--<LinearLayout-->
+                                <!--android:id="@+id/selectServiceDueDateLinearLayout"-->
+                                <!--android:layout_width="fill_parent"-->
+                                <!--android:layout_height="fill_parent"-->
+                                <!--android:layout_weight="5"-->
+                                <!--android:clickable="true">-->
+
+                                <!--<RelativeLayout-->
+                                    <!--android:layout_width="fill_parent"-->
+                                    <!--android:layout_height="fill_parent">-->
+
+                                    <!--<ImageView-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:layout_centerHorizontal="true"-->
+                                        <!--android:layout_centerVertical="true"-->
+                                        <!--android:src="@drawable/ic_date_range_black_24dp" />-->
+                                <!--</RelativeLayout>-->
+
+                            <!--</LinearLayout>-->
+
+                        <!--</LinearLayout>-->
+
+
+                        <TextView
+                            android:id="@+id/dcddssf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/d"
+                            android:layout_marginLeft="3pt"
+                            android:layout_marginTop="5pt"
+                            android:text="Service Type*"
+                            android:textColor="@color/primaryColor" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/serviceTypeRelativeLayout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dcddssf"
+                            android:layout_marginTop="5pt"
+                            android:background="@drawable/round_gray"
+                            android:clickable="true">
+
+
+                            <View
+                                android:id="@+id/viewddd2"
+
+                                android:layout_width="fill_parent"
+
+                                android:layout_height="7pt" />
+
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="7pt"
+                                android:layout_below="@+id/maintenanceTypeSpinner" />
+
+                            <TextView
+                                android:id="@+id/maintenanceTypeSpinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/viewddd2"
+                                android:layout_marginLeft="5pt"
+                                android:text="Select Service Type"
+                                android:textColor="@color/black">
+
+                            </TextView>
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/dfcc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/serviceTypeRelativeLayout"
+                            android:layout_marginLeft="3pt"
+                            android:layout_marginTop="5pt"
+                            android:text="Remark"
+                            android:textColor="@color/primaryColor" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/remarkEditextgdfg"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dfcc"
+                            android:layout_marginLeft="4pt"
+                            android:layout_marginTop="3pt"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ. "
+                            android:hint="Enter your remark"
+                            android:imeOptions="actionDone"
+                            android:inputType="textCapSentences"
+                            android:maxLength="120"
+                            android:theme="@style/autocompleteHomeblack">
+
+                        </android.support.v7.widget.AppCompatEditText>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/dd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ss"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5pt"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:cardElevation="4dp"
+                    card_view:contentPadding="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5pt">
+
+                        <TextView
+                            android:id="@+id/dfddddddddrtghdcc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3pt"
+                            android:layout_marginTop="3pt"
+                            android:text="Service Status"
+                            android:textColor="@color/primaryColor" />
+
+                        <RelativeLayout
+                            android:id="@+id/serviceStatusRelativeLayout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dfddddddddrtghdcc"
+                            android:layout_marginTop="5pt"
+                            android:background="@drawable/round_gray"
+                            android:clickable="true">
+
+                            <View
+                                android:id="@+id/dfgffghfg"
+                                android:layout_width="fill_parent"
+                                android:layout_height="7pt" />
+
+
+                            <TextView
+                                android:id="@+id/lovServiceStatus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/dfgffghfg"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5pt"
+                                android:text="Status"
+                                android:textColor="@color/black">
+
+                            </TextView>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="7pt"
+                                android:layout_below="@+id/lovServiceStatus" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/hideRelativeLayout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_below="@+id/serviceStatusRelativeLayout"
+                            >
+
+                            <TextView
+                                android:id="@+id/dfddddddcc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3pt"
+                                android:layout_marginTop="3pt"
+                                android:text="Other Problems*"
+
+                                android:textColor="@color/primaryColor" />
+
+                            <RelativeLayout
+                                android:id="@+id/otherLovRelativeLayout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/dfddddddcc"
+                                android:layout_marginTop="5pt"
+                                android:background="@drawable/round_gray"
+                                android:clickable="true">
+
+                                <View
+                                    android:id="@+id/viewdddff2"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="7pt" />
+
+
+                                <TextView
+                                    android:id="@+id/lovAlertsSpinner"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/viewdddff2"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="5pt"
+                                    android:text="Other Problems"
+                                    android:textColor="@color/black">
+
+                                </TextView>
+
+                                <View
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="7pt"
+                                    android:layout_below="@+id/lovAlertsSpinner" />
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50pt"
+                    android:layout_below="@+id/dd">
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/submitFillupMaintFloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30pt"
+            android:layout_marginRight="10pt"
+            android:clickable="true"
+            android:onClick="saveMaintenanceRecord"
+            android:src="@drawable/ic_done_black_24dp"
+            app:backgroundTint="@color/primaryColor"
+            app:layout_anchorGravity="bottom"
+            app:rippleColor="@color/primaryColorDark" />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

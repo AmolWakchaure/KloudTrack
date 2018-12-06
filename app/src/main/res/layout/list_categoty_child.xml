@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/oneRel"
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/addDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:layout_marginLeft="10pt"
+            android:layout_marginTop="5pt"
+            android:text="Add description"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/downloadButtondsfd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addDescription"
+            android:layout_marginLeft="8pt"
+            android:layout_marginRight="8pt"
+            android:layout_marginTop="3pt"
+            android:text="Click on below link to view advertise:"
+            android:textColor="@color/autoCompleteHintColor" />
+
+
+        <TextView
+            android:id="@+id/downloadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/downloadButtondsfd"
+            android:layout_marginLeft="8pt"
+            android:layout_marginRight="8pt"
+            android:layout_marginTop="3pt"
+            android:autoLink="web"
+            android:textColor="@color/black"
+            android:text="Download" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@+id/downloadButton"
+            android:layout_marginLeft="8pt"
+            android:layout_marginRight="8pt"
+            android:layout_marginTop="3pt" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

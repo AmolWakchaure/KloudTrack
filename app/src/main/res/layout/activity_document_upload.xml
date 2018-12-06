@@ -1,0 +1,1977 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_color"
+    tools:context=".docupload.DocumentUploadActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="7dp"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    card_view:cardCornerRadius="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="2dp">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent">
+
+                                    <TextView
+                                        android:id="@+id/textView7"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginLeft="4pt"
+                                        android:layout_marginTop="4pt"
+                                        android:text="Driving Licence"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:textColor="@color/fentBlack" />
+
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="0.1pt"
+                                        android:layout_below="@+id/textView7"
+                                        android:layout_marginLeft="2pt"
+                                        android:layout_marginRight="2pt"
+                                        android:layout_marginTop="4pt"
+                                        android:background="@color/fentBlack" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1">
+
+                                    <RelativeLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent">
+
+                                        <TextView
+                                            android:id="@+id/licenceAttachText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_marginLeft="4pt"
+                                            android:text=""
+                                            android:textColor="@color/fentBlack" />
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="3">
+
+
+                                    <RelativeLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent">
+
+                                        <Button
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="15pt"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_marginBottom="4pt"
+                                            android:layout_marginRight="4pt"
+                                            android:background="@drawable/round_buttonn"
+                                            android:onClick="attachDrivingLicence"
+                                            android:text="View"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/colorWhite" />
+
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="7dp"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    card_view:cardCornerRadius="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="2dp">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent">
+
+                                    <TextView
+                                        android:id="@+id/textView8"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginLeft="4pt"
+                                        android:layout_marginTop="4pt"
+                                        android:text="Insurance"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:textColor="@color/fentBlack" />
+
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="0.1pt"
+                                        android:layout_below="@+id/textView8"
+                                        android:layout_marginLeft="2pt"
+                                        android:layout_marginRight="2pt"
+                                        android:layout_marginTop="4pt"
+                                        android:background="@color/fentBlack" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1">
+
+                                    <RelativeLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent">
+
+                                        <TextView
+                                            android:id="@+id/insuranceAttachText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_marginLeft="4pt"
+                                            android:text=""
+                                            android:textColor="@color/fentBlack" />
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="3">
+
+                                    <RelativeLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+
+                                        >
+
+                                        <Button
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="15pt"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_marginBottom="4pt"
+                                            android:layout_marginRight="4pt"
+                                            android:background="@drawable/round_buttonn"
+                                            android:onClick="ataacheInsurance"
+                                            android:text="View"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/colorWhite" />
+
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="7dp"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    card_view:cardCornerRadius="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="2dp">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent">
+
+                                    <TextView
+                                        android:id="@+id/textView9"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginLeft="4pt"
+                                        android:layout_marginTop="4pt"
+                                        android:text="Pollution"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:textColor="@color/fentBlack" />
+
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="0.1pt"
+                                        android:layout_below="@+id/textView9"
+                                        android:layout_marginLeft="2pt"
+                                        android:layout_marginRight="2pt"
+                                        android:layout_marginTop="4pt"
+                                        android:background="@color/fentBlack" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1">
+
+                                    <RelativeLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent">
+
+                                        <TextView
+                                            android:id="@+id/pollutionAttachText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_marginLeft="4pt"
+                                            android:text=""
+                                            android:textColor="@color/fentBlack" />
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="3">
+
+                                    <RelativeLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+
+                                        >
+
+                                        <Button
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="15pt"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_marginBottom="4pt"
+                                            android:layout_marginRight="4pt"
+                                            android:background="@drawable/round_buttonn"
+                                            android:onClick="attachPollution"
+                                            android:text="View"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/colorWhite" />
+
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_margin="7dp"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<android.support.v7.widget.CardView-->
+
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--card_view:cardCornerRadius="3dp">-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_margin="2dp">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView10"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginLeft="4pt"-->
+            <!--android:layout_marginTop="4pt"-->
+            <!--android:text="Service Schedule"-->
+            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+            <!--android:textColor="@color/fentBlack" />-->
+
+            <!--<View-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="0.1pt"-->
+            <!--android:layout_below="@+id/textView10"-->
+            <!--android:layout_marginLeft="2pt"-->
+            <!--android:layout_marginRight="2pt"-->
+            <!--android:layout_marginTop="4pt"-->
+            <!--android:background="@color/fentBlack" />-->
+            <!--</RelativeLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/d"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginLeft="4pt"-->
+            <!--android:text=""-->
+            <!--android:textColor="@color/fentBlack" />-->
+            <!--</RelativeLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_weight="5">-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:background="@drawable/ic_next"-->
+            <!--android:clickable="true"-->
+            <!--android:onClick="attachserviceDue">-->
+
+
+            <!--</RelativeLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <!--</RelativeLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--</LinearLayout>-->
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/serviceDueLicence"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#80000000"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="15pt"
+            android:background="@drawable/card_view">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="6.5">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="Service Schedule"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/primaryColor" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.3pt"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/primaryColor" />
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:onClick="cancelDueDialog"
+                            android:src="@drawable/ic_cancel_black_36dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="8">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@color/screen_color"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginBottom="0.1pt"
+                                android:layout_marginRight="0.1pt"
+                                android:layout_weight="1"
+                                android:background="@color/colorWhite"
+                                android:clickable="true"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:onClick="newServiceRequest"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/fghfg"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="New Service"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/fghfg"
+
+                                    android:text="Request"
+                                    android:textColor="@color/black" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginBottom="0.1pt"
+                                android:layout_weight="1"
+                                android:background="@color/colorWhite"
+                                android:clickable="true"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:onClick="serviceHistory">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Service History"
+                                    android:textColor="@color/black" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <RelativeLayout
+                                android:id="@+id/serviceHistoryRequestLayout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:visibility="gone">
+
+                                <RelativeLayout
+
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginBottom="4dp">
+
+
+                                    <LinearLayout
+                                        android:id="@+id/a"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15pt"
+                                        android:background="@color/screen_color"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:layout_margin="0.1dp"
+                                            android:layout_weight="3"
+                                            android:background="@color/colorWhite"
+                                            android:gravity="center_vertical|center_horizontal">
+
+
+                                            <TextView
+                                                android:id="@+id/historyDate"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Date"
+                                                android:textColor="@color/black"
+                                                android:textStyle="bold" />
+
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+
+                                            android:orientation="horizontal">
+
+                                            <LinearLayout
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:layout_margin="0.1dp"
+                                                android:layout_weight="3"
+                                                android:background="@color/colorWhite"
+                                                android:gravity="center_vertical|center_horizontal">
+
+
+                                                <TextView
+                                                    android:id="@+id/historyCost"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Charges"
+                                                    android:textColor="@color/black"
+                                                    android:textStyle="bold" />
+
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:layout_margin="0.1dp"
+                                                android:layout_weight="1"
+                                                android:background="@color/colorWhite"
+                                                android:gravity="center_vertical|center_horizontal">
+
+
+                                                <TextView
+                                                    android:id="@+id/historyRemark"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Remark"
+                                                    android:textColor="@color/black"
+                                                    android:textStyle="bold" />
+
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <View
+                                        android:id="@+id/asd"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="0.2pt"
+                                        android:layout_below="@+id/a" />
+
+                                    <android.support.v7.widget.RecyclerView
+                                        android:id="@+id/service_history_RecyclerView"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_below="@+id/asd"
+                                        android:background="@color/screen_color">
+
+                                    </android.support.v7.widget.RecyclerView>
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/newServiceRequestLayout"
+                                android:layout_width="fill_parent"
+
+                                android:layout_height="fill_parent">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_margin="16dp"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="1">
+
+                                        <RelativeLayout
+
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="20pt">
+
+                                            <LinearLayout
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+
+                                                android:layout_weight="7"
+                                                android:background="@drawable/round_two"
+                                                android:orientation="horizontal">
+
+                                                <LinearLayout
+                                                    android:layout_width="fill_parent"
+                                                    android:layout_height="fill_parent"
+                                                    android:layout_weight="1"
+                                                    android:gravity="center_vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/serviceVehicleName"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginLeft="5dp"
+
+                                                        android:drawableLeft="@drawable/ic_person_black_24dp"
+                                                        android:drawablePadding="6dp"
+                                                        android:text="Select Vehicle Name*"
+
+                                                        android:textColor="@color/black" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="fill_parent"
+                                                    android:layout_height="fill_parent"
+                                                    android:layout_marginRight="5dp"
+                                                    android:layout_weight="3"
+                                                    android:background="@drawable/ripple_date"
+                                                    android:clickable="true"
+                                                    android:gravity="center_horizontal|center_vertical"
+                                                    android:onClick="selectVehicleNameService">
+
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerHorizontal="true"
+                                                        android:layout_centerVertical="true"
+                                                        android:src="@drawable/ic_mode_edit_white_24dp" />
+
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+
+                                            <!--<Spinner-->
+                                            <!--android:id="@+id/vehicleNameSpinner"-->
+                                            <!--android:layout_width="fill_parent"-->
+                                            <!--android:layout_height="fill_parent"-->
+                                            <!--android:entries="@array/vheicle_names">-->
+
+                                            <!--</Spinner>-->
+
+
+                                        </RelativeLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="1">
+
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:layout_marginBottom="2pt"
+                                            android:layout_marginTop="2pt"
+                                            android:layout_weight="5"
+                                            android:background="@drawable/round_two"
+                                            android:orientation="horizontal">
+
+                                            <LinearLayout
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center_vertical">
+
+                                                <TextView
+                                                    android:id="@+id/serviceDateTextView"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+
+                                                    android:layout_marginLeft="5dp"
+                                                    android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                                                    android:drawablePadding="6dp"
+                                                    android:text="Service Date*"
+
+                                                    android:textColor="@color/black" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:layout_marginRight="5dp"
+                                                android:layout_weight="3"
+                                                android:background="@drawable/ripple_date"
+                                                android:clickable="true"
+                                                android:gravity="center_vertical|center_horizontal"
+                                                android:onClick="selectServiceDate">
+
+                                                <ImageView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:src="@drawable/ic_mode_edit_white_24dp" />
+
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="1">
+
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:layout_marginBottom="2pt"
+                                            android:layout_marginTop="2pt"
+                                            android:layout_weight="5"
+                                            android:background="@drawable/round_two"
+                                            android:orientation="horizontal">
+
+                                            <LinearLayout
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center_vertical">
+
+                                                <TextView
+                                                    android:id="@+id/serviceDueDateTextView"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+
+                                                    android:layout_marginLeft="5dp"
+                                                    android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                                                    android:drawablePadding="6dp"
+                                                    android:text="Service Due Date*"
+                                                    android:textColor="@color/black" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:layout_marginRight="5dp"
+                                                android:layout_weight="3"
+                                                android:background="@drawable/ripple_date"
+                                                android:clickable="true"
+                                                android:gravity="center_vertical|center_horizontal"
+                                                android:onClick="selectServiceDueDate">
+
+                                                <ImageView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+
+                                                    android:src="@drawable/ic_mode_edit_white_24dp" />
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical">
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:id="@+id/serviceChargesTextInputLayout"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+
+                                            android:theme="@style/TextLabel">
+
+                                            <android.support.v7.widget.AppCompatEditText
+                                                android:id="@+id/serviceChargesEditText"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawableLeft="@drawable/ic_person_black_24dp"
+                                                android:drawablePadding="5dp"
+                                                android:hint="Service Charges*"
+                                                android:inputType="phone"
+                                                android:maxLength="5"
+                                                android:singleLine="true"
+                                                android:theme="@style/autocompleteHome">
+
+                                            </android.support.v7.widget.AppCompatEditText>
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="1">
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:id="@+id/remarkTextInputLayout"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:theme="@style/TextLabel">
+
+                                            <android.support.v7.widget.AppCompatEditText
+                                                android:id="@+id/remarkChargesEditText"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:drawableLeft="@drawable/ic_person_black_24dp"
+                                                android:drawablePadding="5dp"
+                                                android:hint="Remark*"
+                                                android:inputType="textCapSentences"
+                                                android:maxLength="150"
+                                                android:singleLine="true"
+                                                android:theme="@style/autocompleteHome">
+
+                                            </android.support.v7.widget.AppCompatEditText>
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="1">
+
+                                        <Spinner
+                                            android:id="@+id/serviceStatusSpinner"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:entries="@array/service_status">
+
+                                        </Spinner>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1">
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1">
+
+                                            <Button
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:layout_margin="5dp"
+                                                android:background="@drawable/round_buttonn"
+                                                android:onClick="submitServiceScheduleDetails"
+                                                android:text="Submit"
+                                                android:textColor="@color/colorWhite" />
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pollutionDoucument"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#80000000"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="40pt"
+            android:layout_marginLeft="20pt"
+            android:layout_marginRight="20pt"
+            android:layout_marginTop="20pt"
+            android:background="@drawable/card_view">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="6.5">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="Pollution"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/primaryColor" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.3pt"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/primaryColor" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:onClick="cancelPollutionDialog"
+                            android:src="@drawable/ic_cancel_black_36dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="5pt"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="7"
+                            android:background="@drawable/round_two"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginRight="0.2pt">
+
+                                    <TextView
+                                        android:id="@+id/vehicleNameTextViewPollution"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:drawableLeft="@drawable/ic_person_black_24dp"
+                                        android:drawablePadding="6dp"
+                                        android:text="Vehicle Name*"
+
+                                        android:textColor="@color/black" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="3">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@drawable/ripple_date"
+                                    android:clickable="true"
+                                    android:onClick="selectVehicleNamePollution">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:src="@drawable/ic_mode_edit_white_24dp" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginTop="2pt"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginBottom="2pt"
+                                    android:background="@color/screen_color">
+
+                                    <ImageView
+                                        android:id="@+id/pollutionImageview"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:scaleType="fitXY" />
+
+                                    <ImageView
+                                        android:id="@+id/ppolutionImageView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:src="@drawable/ic_car_pollution" />
+
+                                    <ImageView
+                                        android:layout_width="20pt"
+                                        android:layout_height="20pt"
+                                        android:layout_marginLeft="10pt"
+                                        android:layout_marginTop="10pt"
+                                        android:onClick="documentPollution"
+                                        android:src="@drawable/ic_ccamera" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="5"
+
+                                android:background="@drawable/round_two"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="1">
+
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1">
+
+                                            <RelativeLayout
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+
+                                                android:layout_marginRight="0.2pt">
+
+                                                <TextView
+                                                    android:id="@+id/pollutionExpfgfDateTextView"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                                                    android:drawablePadding="6dp"
+                                                    android:text="Expiry Date*"
+
+                                                    android:textColor="@color/black" />
+
+                                            </RelativeLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="3">
+
+                                            <RelativeLayout
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:layout_marginRight="5dp"
+                                                android:background="@drawable/ripple_date"
+                                                android:clickable="true"
+                                                android:onClick="selectDatePollution">
+
+                                                <ImageView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_mode_edit_white_24dp" />
+
+                                            </RelativeLayout>
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="2">
+
+                                        <Button
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:layout_margin="2pt"
+                                            android:background="@drawable/round_buttonn"
+                                            android:onClick="submitPollutionDetails"
+                                            android:text="Submit"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/colorWhite" />
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/carInsurance"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#80000000"
+        android:visibility="gone"
+
+
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="40pt"
+            android:layout_marginLeft="20pt"
+            android:layout_marginRight="20pt"
+            android:layout_marginTop="20pt"
+            android:background="@drawable/card_view">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="6.5">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:id="@+id/textViewa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="Insurance"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/primaryColor" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.3pt"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/primaryColor" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:onClick="cancelInsuranceDialog"
+                            android:src="@drawable/ic_cancel_black_36dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="5pt"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="7"
+                            android:background="@drawable/round_two"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginRight="0.2pt">
+
+                                    <TextView
+                                        android:id="@+id/vehicleNameTextViewInsurance"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:drawableLeft="@drawable/ic_person_black_24dp"
+                                        android:drawablePadding="6dp"
+                                        android:text="Vehicle Name*"
+
+                                        android:textColor="@color/black" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="3">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@drawable/ripple_date"
+                                    android:clickable="true"
+                                    android:onClick="selectVehicleNameInsurance">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:src="@drawable/ic_mode_edit_white_24dp" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginTop="2pt"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginBottom="2pt"
+                                    android:background="@color/screen_color">
+
+                                    <ImageView
+                                        android:id="@+id/insuranceImageView"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:scaleType="fitXY" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:src="@drawable/ic_insurance" />
+
+                                    <ImageView
+                                        android:layout_width="20pt"
+                                        android:layout_height="20pt"
+                                        android:layout_marginLeft="10pt"
+                                        android:layout_marginTop="10pt"
+                                        android:onClick="docummentInsurance"
+                                        android:src="@drawable/ic_ccamera" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="5"
+
+                                android:background="@drawable/round_two"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="1">
+
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1">
+
+                                            <RelativeLayout
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:layout_marginRight="0.2pt">
+
+                                                <TextView
+                                                    android:id="@+id/insuranceDateTextview"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                                                    android:drawablePadding="6dp"
+                                                    android:text="Expiry Date*"
+
+                                                    android:textColor="@color/black" />
+
+                                            </RelativeLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="3">
+
+                                            <RelativeLayout
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:layout_marginRight="5dp"
+                                                android:background="@drawable/ripple_date"
+                                                android:onClick="selectDateInsurance">
+
+                                                <ImageView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_mode_edit_white_24dp" />
+
+                                            </RelativeLayout>
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="2">
+
+                                        <Button
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:layout_margin="2pt"
+                                            android:background="@drawable/round_buttonn"
+                                            android:onClick="submitInsuranceDetails"
+                                            android:text="Submit"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/colorWhite" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/drivingLicence"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#80000000"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="40pt"
+            android:layout_marginLeft="20pt"
+            android:layout_marginRight="20pt"
+            android:layout_marginTop="20pt"
+            android:background="@drawable/card_view">
+
+            <LinearLayout
+                android:id="@+id/asds"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="6.5">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="Driving Licence"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/primaryColor" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.3pt"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/primaryColor" />
+
+                        <ImageView
+                            android:id="@+id/cancelDialog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:onClick="cancelDialog"
+                            android:src="@drawable/ic_cancel_black_36dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="5pt"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="7"
+                            android:background="@drawable/round_two"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginRight="0.2pt">
+
+                                    <TextView
+                                        android:id="@+id/vehicleNameTextViewDrivingLicence"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:drawableLeft="@drawable/ic_person_black_24dp"
+                                        android:drawablePadding="6dp"
+                                        android:text="Vehicle Name*"
+
+                                        android:textColor="@color/black" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="3">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@drawable/ripple_date"
+                                    android:clickable="true"
+                                    android:onClick="selectVehicleNameDrivingLicence">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:src="@drawable/ic_mode_edit_white_24dp" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginTop="2pt"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginBottom="3pt"
+                                    android:background="@color/screen_color">
+
+                                    <ImageView
+                                        android:id="@+id/licenceImage"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:scaleType="fitXY" />
+
+                                    <ImageView
+                                        android:id="@+id/oneImageview"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:src="@drawable/ic_driving_page" />
+
+                                    <ImageView
+                                        android:id="@+id/buttonForTakePicture"
+                                        android:layout_width="20pt"
+                                        android:layout_height="20pt"
+                                        android:layout_marginLeft="10pt"
+                                        android:layout_marginTop="10pt"
+                                        android:onClick="pictureDrivingLicence"
+                                        android:src="@drawable/ic_ccamera" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="5"
+
+                                android:background="@drawable/round_two"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="1">
+
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1">
+
+                                            <RelativeLayout
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:layout_marginRight="0.2pt">
+
+                                                <TextView
+
+                                                    android:id="@+id/expiryDateDrivingLicence"
+
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                                                    android:drawablePadding="6dp"
+                                                    android:text="Expiry Date*"
+
+                                                    android:textColor="@color/black" />
+
+                                            </RelativeLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="3">
+
+                                            <RelativeLayout
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:layout_marginRight="5dp"
+                                                android:background="@drawable/ripple_date"
+                                                android:onClick="selectDateDrivingLicence">
+
+                                                <ImageView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_mode_edit_white_24dp" />
+
+                                            </RelativeLayout>
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="2">
+
+                                        <Button
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:layout_margin="2pt"
+                                            android:background="@drawable/round_buttonn"
+                                            android:onClick="submitDrivingLicenceDetails"
+                                            android:text="Submit"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/colorWhite" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/updatingImageLayout"
+        android:layout_width="100pt"
+        android:layout_height="50pt"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/round_buttonn"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <com.github.rahatarmanahmed.cpv.CircularProgressView
+                android:id="@+id/progress_view"
+                android:layout_width="25pt"
+                android:layout_height="25pt"
+
+
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:cpv_animAutostart="true"
+                app:cpv_indeterminate="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progress_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10pt"
+                android:text="Uploading image..."
+                android:textColor="@color/colorWhite" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:text="Vehicle Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginTop="3pt"
+            android:layout_marginLeft="3pt"
+            android:id="@+id/textViewVehicleName" />
+        <TextView
+            android:id="@+id/textViewMaintenanceType"
+            android:text="Maintenance Type:"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2pt"
+            android:layout_marginLeft="10pt"
+            android:layout_below="@+id/textViewVehicleName" />
+        <TextView
+            android:id="@+id/textViewMaintenanceTypeData"
+            android:text="Maintenance Details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2pt"
+            android:layout_marginLeft="10pt"
+            android:layout_below="@+id/textViewMaintenanceType" />
+        <TextView
+            android:id="@+id/textViewOdoReading"
+            android:text="ODO Reading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2pt"
+            android:layout_marginLeft="10pt"
+
+            android:layout_below="@+id/textViewMaintenanceTypeData" />
+        <TextView
+            android:id="@+id/textViewCost"
+            android:text="Cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2pt"
+            android:layout_marginLeft="10pt"
+
+            android:layout_below="@+id/textViewOdoReading" />
+        <TextView
+            android:id="@+id/textViewDate"
+            android:text="Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2pt"
+            android:layout_marginLeft="10pt"
+            android:layout_below="@+id/textViewCost" />
+        <TextView
+            android:id="@+id/textViewAlerts"
+            android:text="Alerts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2pt"
+            android:layout_marginLeft="10pt"
+            android:layout_below="@+id/textViewDate" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/textViewAlerts"
+            android:background="@color/screen_color"
+            android:layout_marginTop="5pt"
+            android:layout_height="0.2pt"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

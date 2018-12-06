@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="snsystems.obd">
+
+    <!-- getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN); -->
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".classes.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/ic_launcherr"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.maps.v2.API_KEY" -->
+        <!-- android:value="@string/google_maps_key" /> -->
+        <!-- The "com.google.android.geo.API_KEY" entry is sufficient for both the Maps and Places services. -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+
+        <!--<receiver android:name=".receiver.CheckUninstall" >-->
+            <!--<intent-filter>-->
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <!--<action android:name="android.intent.action.PACKAGE_ADDED" />-->
+                <!--<action android:name="android.intent.action.PACKAGE_REMOVED" />-->
+                <!--<data android:scheme="package"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <activity
+            android:name=".activity.SplashScreen"
+            android:label="@string/title_activity_maps">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.DemoActivity"
+            android:label="@string/title_activity_demo" />
+
+        <service android:name=".geofencing.CheckEntryExitService" />
+        <!--<service android:name=".services.LoadDailyData" />-->
+
+        <activity
+            android:name=".activity.CustomViewsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_custom_views" />
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_custom_views" />
+        <activity
+            android:name=".activity.MainNavigationActivity"
+            android:label="@string/title_activity_main_navigation" />
+        <activity
+            android:name=".activity.ActivityTermsConditions"
+            android:label="@string/title_activity_activity_terms_conditions" />
+        <activity
+            android:name=".devicemgt.ActivityManageDevice"
+            android:label="@string/title_activity_activity_manage_account" />
+        <activity
+            android:name=".tutorial.AppTutorialActivity"
+            android:label="@string/title_activity_app_tutorial" />
+        <activity
+            android:name=".dashboard.DashboardActivity"
+            android:label="@string/dashboard" />
+        <activity
+            android:name=".sos.SubmitSosContactActivity"
+            android:label="@string/sos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".trips.TripMapsActivity"
+            android:label="Smart Trip" />
+        <activity
+            android:name=".trips.TripsTabActivity"
+            android:label="@string/trips" />
+        <activity
+            android:name=".userprofile.ActivityUserProfile"
+            android:label="@string/profile" />
+        <activity
+            android:name=".devicemgt.ActivityUpdateDevice"
+            android:label="@string/upDevice" />
+        <activity
+            android:name=".docupload.DocumentUploadActivity"
+            android:label="@string/document" />
+        <activity
+            android:name=".userprofile.ChangePasswordActivity"
+            android:label="@string/chPassword" />
+        <activity
+            android:name=".alerts.ManageAlertsActivity"
+            android:label="@string/manageAlerts" />
+        <activity
+            android:name=".alerts.VehicleNotificationActivity"
+            android:label="@string/notification" />
+        <activity
+            android:name=".maintenance.VehicleMaintenanceActivity"
+            android:label="@string/maint_entry" />
+        <activity
+            android:name=".fueltrack.VehicleFuelTrackerActivity"
+            android:label="@string/fuel_entry" />
+        <activity
+            android:name=".alertsnew.ManageAlertsTabsActivity"
+            android:label="@string/alertsfgh" />
+        <activity
+            android:name=".activity.FeedbackActivity"
+            android:label="@string/feedback" />
+        <activity
+            android:name=".advertise.DisplayAdvertiseActivity"
+            android:label="@string/sdvertise" />
+        <activity
+            android:name=".devicemgt.ActivityAddDevice"
+            android:label="@string/addDevice" />
+        <activity
+            android:name=".carlog.CarLogTabsActivity"
+            android:label="@string/crrLog" />
+        <activity
+            android:name=".maintenance.MaintenanceReportsActivity"
+            android:label="Maintenance Reports" />
+        <activity
+            android:name=".fueltrack.FuelReportsActivity"
+            android:label="Fuel Reports" />
+        <activity
+            android:name=".fueltrack.FuelCalculationActivity"
+            android:label="Overall Reports" />
+        <activity
+            android:name=".locatecar.LocateCarActivity"
+            android:label="Locate Car" />
+        <activity
+            android:name=".sos.MessageActivity"
+            android:label="Overall Reports" />
+        <activity
+            android:name=".sos.SendSmsActivity"
+            android:label="Health" />
+        <activity
+            android:name=".health.VehicleHealthActivity"
+            android:label="@string/vhealth" />
+        <activity android:name=".notificationalerts.MakeAlertActivity" />
+        <activity
+            android:name=".notificationalerts.DisplayNotificationDetailsActivity"
+            android:label="@string/alertssd" />
+        <activity
+            android:name=".locatecar.LocateCarNewActivity"
+            android:label="@string/carlocation" />
+        <activity
+            android:name=".trips.CreateTripActivity"
+            android:label="@string/createTrip" />
+        <activity
+            android:name=".trips.ViewTripActivity"
+            android:label="Smart Trips" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".sos.PhoneContactsActivity" />
+        <activity
+            android:name=".tripsnew.TripsSmartTabsTripsActivity"
+            android:label="Trips" />
+        <activity
+            android:name=".fueltracknew.FuelTrackFillupReportsTabActivity"
+            android:label="@string/fuelt" />
+        <activity
+            android:name=".sos.SendSosActivity"
+            android:label="Send SoS" />
+        <activity
+            android:name=".maintenance.MaintenanceServiceTabActivity"
+            android:label="Maintenance and Service" />
+        <activity
+            android:name=".tripsnew.SevenDayTripMapsActivity"
+            android:label="Trip Route" />
+        <activity
+            android:name=".performancedash.PerformanceDashboardActivity"
+            android:label="Performance Dashboard" />
+        <activity
+            android:name=".maintenance.UpdateServiceScheduleActivity"
+            android:label="Update Service" />
+        <activity
+            android:name=".health.HealthNewActivity"
+            android:label="Health" />
+        <activity
+            android:name=".geofencesnehal.EditGeofence"
+            android:label="Edit Geofence" />
+        <activity
+            android:name=".geofencesnehal.GeofenceActivitySnehal"
+            android:label="Geofence" />
+        <activity
+            android:name=".geofencesnehal.MapsActivity"
+            android:label="Geofence" />
+        <activity android:name=".geofencing.GeoFencingActivity"
+            />
+        <activity android:name=".graphs.speed.SpeedLineChartActivity" />
+        <activity
+            android:name=".geofencing.EditeGeofenceActivity"
+            android:label="@string/title_activity_edite_geofence"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".howtouse.HowToUseActivity">
+
+        </activity>
+    </application>
+
+</manifest>

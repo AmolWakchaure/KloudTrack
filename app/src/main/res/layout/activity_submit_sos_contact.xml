@@ -1,0 +1,612 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sos.SubmitSosContactActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar" />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/screen_color">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40pt"
+
+            android:background="@color/primaryColor"></RelativeLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="8pt">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/a"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2.5dp"
+
+                    card_view:cardCornerRadius="4dp"
+                    card_view:contentPadding="5dp">
+
+                    <RelativeLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="5pt"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:weightSum="2">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10pt"
+                                    android:layout_weight="2"
+                                    android:text="First Contact"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:onClick="addFirstContactPreference"
+                                    android:src="@drawable/ic_contacts_black_24dp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent">
+
+                                    <RelativeLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent">
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:id="@+id/first_name_TextInputLayout"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:theme="@style/TextLabel">
+
+                                            <android.support.v7.widget.AppCompatEditText
+                                                android:id="@+id/first_name_EditText"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginLeft="10pt"
+                                                android:drawableLeft="@drawable/ic_person_black_24dp"
+                                                android:drawablePadding="4dp"
+                                                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                                android:hint="First Person Name*"
+                                                android:inputType="textNoSuggestions|textCapWords|text"
+                                                android:maxLength="25"
+                                                android:theme="@style/autocompleteHome" />
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </RelativeLayout>
+
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/first_number_TextInputLayout"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:theme="@style/TextLabel">
+
+                                        <android.support.v7.widget.AppCompatEditText
+                                            android:id="@+id/first_number_EditText"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="10pt"
+                                            android:drawableLeft="@drawable/ic_callll_black_24dp"
+                                            android:drawablePadding="4dp"
+                                            android:digits="+0123456789"
+                                            android:hint="First Person Number*"
+                                            android:inputType="phone"
+                                            android:maxLength="13"
+                                            android:theme="@style/autocompleteHome" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/b"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/a"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:contentPadding="5dp">
+
+                    <RelativeLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="5pt"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:weightSum="2">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="10pt"
+                                    android:layout_weight="2"
+                                    android:text="Second Contact"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:onClick="addSecondContactPreference"
+                                    android:src="@drawable/ic_contacts_black_24dp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent">
+
+                                    <RelativeLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent">
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:id="@+id/second_name_TextInputLayout"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:theme="@style/TextLabel">
+
+
+                                            <android.support.v7.widget.AppCompatEditText
+                                                android:id="@+id/second_name_EditText"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginLeft="10pt"
+                                                android:drawableLeft="@drawable/ic_person_black_24dp"
+                                                android:drawablePadding="4dp"
+                                                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                                android:hint="Second Person Name"
+                                                android:inputType="textNoSuggestions|textCapWords"
+                                                android:maxLength="25"
+                                                android:theme="@style/autocompleteHome" />
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </RelativeLayout>
+
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/second_number_TextInputLayout"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:theme="@style/TextLabel">
+
+                                        <android.support.v7.widget.AppCompatEditText
+                                            android:id="@+id/second_number_EditText"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="10pt"
+                                            android:drawableLeft="@drawable/ic_callll_black_24dp"
+                                            android:drawablePadding="4dp"
+                                            android:digits="+0123456789"
+                                            android:hint="Second Person Number"
+                                            android:inputType="phone"
+                                            android:maxLength="13"
+                                            android:theme="@style/autocompleteHome" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/c"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:contentPadding="5dp">
+
+                    <RelativeLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/b">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="5pt"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:weightSum="2">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="10pt"
+                                    android:layout_weight="2"
+                                    android:text="Third Contact"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/imageView4"
+                                    android:layout_width="wrap_content"
+                                    android:onClick="addThirdContactPreference"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_contacts_black_24dp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent">
+
+                                    <RelativeLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent">
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:id="@+id/third_name_TextInputLayout"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:theme="@style/TextLabel">
+
+                                            <android.support.v7.widget.AppCompatEditText
+                                                android:id="@+id/third_name_EditText"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginLeft="10pt"
+                                                android:drawableLeft="@drawable/ic_person_black_24dp"
+                                                android:drawablePadding="4dp"
+                                                android:hint="Third Person Name"
+                                                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                                android:inputType="textNoSuggestions|textCapWords"
+                                                android:maxLength="25"
+                                                android:theme="@style/autocompleteHome" />
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </RelativeLayout>
+
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/third_number_TextInputLayout"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:theme="@style/TextLabel">
+
+                                        <android.support.v7.widget.AppCompatEditText
+                                            android:id="@+id/third_number_EditText"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="10pt"
+                                            android:drawableLeft="@drawable/ic_callll_black_24dp"
+                                            android:drawablePadding="4dp"
+                                            android:digits="+0123456789"
+                                            android:hint="Third Person Number"
+                                            android:inputType="phone"
+                                            android:maxLength="13"
+                                            android:theme="@style/autocompleteHome" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/ddf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/c"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:contentPadding="5dp">
+
+                    <RelativeLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="5pt"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:weightSum="2">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="10pt"
+                                    android:layout_weight="2"
+                                    android:text="Fourth Contact"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textStyle="bold" />
+
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:onClick="addFourthContactPreference"
+                                    android:src="@drawable/ic_contacts_black_24dp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent">
+
+                                    <RelativeLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent">
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:id="@+id/special_name_TextInputLayout"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:theme="@style/TextLabel">
+
+                                            <android.support.v7.widget.AppCompatEditText
+                                                android:id="@+id/special_name_EditText"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginLeft="10pt"
+                                                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                                android:inputType="textNoSuggestions|textCapWords"
+                                                android:maxLength="25"
+                                                android:drawableLeft="@drawable/ic_person_black_24dp"
+                                                android:drawablePadding="4dp"
+                                                android:hint="Fourth Person Name"
+                                                android:theme="@style/autocompleteHome" />
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </RelativeLayout>
+
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/special_number_TextInputLayout"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:theme="@style/TextLabel">
+
+                                        <android.support.v7.widget.AppCompatEditText
+
+
+                                            android:id="@+id/special_number_EditText"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="10pt"
+                                            android:drawableLeft="@drawable/ic_callll_black_24dp"
+                                            android:drawablePadding="4dp"
+                                            android:digits="+0123456789"
+
+                                            android:hint="Fourth Person Number"
+                                            android:inputType="phone"
+                                            android:maxLength="13"
+                                            android:theme="@style/autocompleteHome" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="20pt"
+                    android:layout_below="@+id/ddf">
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10pt"
+        android:layout_marginRight="10pt"
+        android:clickable="true"
+        android:onClick="submitDetails"
+        android:src="@drawable/ic_done_black_24dp"
+        app:backgroundTint="@color/primaryColor"
+        app:layout_anchorGravity="bottom"
+        app:rippleColor="@color/colorWhite" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/viewSendSOS"-->
+        <!--android:layout_width="30pt"-->
+        <!--android:layout_height="30pt"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+         <!---->
+        <!--android:layout_marginBottom="10pt"-->
+        <!--android:onClick="sendSOS"-->
+        <!--android:layout_marginLeft="10pt"-->
+        <!--android:background="@drawable/ic_sos_deactive"-->
+        <!--android:clickable="true"-->
+
+        <!--/>-->
+
+</RelativeLayout>

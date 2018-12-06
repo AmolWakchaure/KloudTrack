@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="snsystem.geofencing.activity.FeedbackActivity">
+
+    <item
+        android:id="@+id/speedGraph"
+        android:title="Speed Graph">
+    </item>
+    <item
+        android:id="@+id/rpmGraph"
+        android:title="RPM Graph">
+    </item>
+    <item
+        android:id="@+id/onTimeGraph"
+        android:title="Vehicle On Time Graph">
+    </item>
+    <item
+        android:id="@+id/batteryVoltageGraph"
+        android:title="Battery Voltage Graph">
+    </item>
+    <item
+        android:id="@+id/coolantTempratureGraph"
+        android:title="Coolant Temperature Graph">
+    </item>
+
+
+
+</menu>
